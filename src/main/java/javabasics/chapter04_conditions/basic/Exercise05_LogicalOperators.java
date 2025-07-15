@@ -1,4 +1,4 @@
-package javabasics.chapter04_conditions.basic;
+package main.java.javabasics.chapter04_conditions.basic;
 
 /**
  * <h1>Chapter 4 - 조건문</h1>

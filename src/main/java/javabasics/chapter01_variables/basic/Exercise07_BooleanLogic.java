@@ -1,4 +1,4 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
  * <h2>Chapter 1: 변수와 데이터 타입</h2>

@@ -1,4 +1,4 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
  * <h2>Chapter 1 - 변수와 데이터 타입</h2>
@@ -43,6 +43,7 @@ public class Exercise01_IntegerVariable {
          * - 세미콜론(;)을 잊지 마세요
          */
 
+        int age = 25; // 정수형 변수 age를 선언하고 25로 초기화합니다.
 
         // 아래 코드는 수정하지 마세요
         System.out.println("나이: " + age);

@@ -1,0 +1,240 @@
+# Overview
+This project creates a comprehensive Java fundamental syntax assessment system designed for beginner developers. The system presents a series of carefully structured programming problems that test understanding of basic Java concepts, from primitive data types to string manipulation. Each problem provides hints and scaffolding to guide learners toward correct solutions while ensuring they understand core language features. The assessment covers essential topics that every Java developer must master before advancing to object-oriented programming and more complex concepts.
+
+# Core Features
+
+## Problem Categories
+- **Primitive Data Types**: Problems testing declaration, initialization, and type conversion of int, double, boolean, char, long, float, byte, and short
+- **String Operations**: String creation, concatenation, comparison (equals vs ==), length, substring, indexOf, and common string methods
+- **Operators**: Arithmetic (+, -, *, /, %), comparison (>, <, >=, <=, ==, !=), logical (&&, ||, !), and assignment operators
+- **Control Flow**: if-else statements, switch cases, ternary operators, and basic conditional logic
+- **Loops**: for loops, while loops, do-while loops, nested loops, and loop control (break, continue)
+- **Arrays**: Array declaration, initialization, accessing elements, array length, and basic array operations
+- **Methods**: Method declaration, parameters, return types, method overloading, and scope
+- **Type Casting**: Implicit and explicit casting, widening and narrowing conversions
+- **Input/Output**: Using Scanner for user input, System.out.println for output
+- **Comments and Documentation**: Single-line, multi-line comments, and basic Javadoc
+
+## Hint System
+- **Progressive Hints**: Each problem includes 3-5 levels of hints, from subtle nudges to more explicit guidance
+- **Syntax Templates**: Code templates showing the structure without revealing the solution
+- **Common Mistakes**: Warnings about typical beginner errors (e.g., using = instead of ==)
+- **Example Patterns**: Similar but simpler examples to demonstrate concepts
+
+## Assessment Features
+- **Immediate Feedback**: Real-time validation of code syntax and logic
+- **Test Cases**: Multiple test cases for each problem to ensure comprehensive understanding
+- **Error Messages**: Clear, beginner-friendly error explanations
+- **Progress Tracking**: Visual representation of completed topics and mastery levels
+
+# User Experience
+
+## User Personas
+- **Complete Beginner**: No programming experience, needs maximum guidance and explanation
+- **Programming Convert**: Experience in other languages, needs Java-specific syntax clarification
+- **Student Learner**: Following a curriculum, needs structured progression and practice
+
+## Key User Flows
+1. **Problem Selection**: User browses categories or follows suggested learning path
+2. **Problem Solving**: Read problem → Understand requirements → Write code → Use hints if stuck → Submit solution
+3. **Learning from Mistakes**: View error → Understand issue → Apply hint → Retry → Success
+4. **Progress Review**: Check completed problems → Identify weak areas → Practice specific topics
+
+## UI/UX Considerations
+- **Clean Code Editor**: Syntax highlighting, auto-indentation, and bracket matching
+- **Split View**: Problem description on left, code editor on right
+- **Hint Panel**: Collapsible hint section that doesn't give away answers immediately
+- **Visual Feedback**: Green checkmarks for passed tests, red X for failures with specific line numbers
+- **Mobile Responsive**: Accessible on tablets for learning on-the-go
+
+<Context>
+# Technical Architecture
+
+## System Components
+- **Problem Engine**: Core system that manages problem definitions, test cases, and validation logic
+- **Code Executor**: Sandboxed Java runtime environment for safe code execution
+- **Hint Generator**: Dynamic hint system that adapts based on user's code attempts
+- **Progress Tracker**: Database-backed system for storing user progress and performance metrics
+- **Web Interface**: React-based frontend with Monaco editor for code editing
+
+## Data Models
+```java
+class Problem {
+    String id;
+    String title;
+    String description;
+    String category;
+    List<String> hints;
+    String starterCode;
+    List<TestCase> testCases;
+    String solution;
+    int difficulty; // 1-5
+}
+
+class TestCase {
+    String input;
+    String expectedOutput;
+    boolean isHidden;
+}
+
+class UserProgress {
+    String userId;
+    Map<String, ProblemAttempt> attempts;
+    Map<String, Integer> categoryScores;
+}
+
+class ProblemAttempt {
+    String problemId;
+    List<String> codeSubmissions;
+    int hintsUsed;
+    boolean solved;
+    long timeSpent;
+}
+```
+
+## APIs and Integrations
+- **Code Execution API**: POST /execute - Runs Java code in isolated environment
+- **Problem API**: GET /problems, GET /problems/{id}, GET /problems/category/{category}
+- **Progress API**: GET /progress/{userId}, POST /progress/update
+- **Hint API**: GET /hints/{problemId}/{level}
+- **Java Compiler Integration**: Using Java Compiler API for syntax validation
+
+## Infrastructure Requirements
+- **Application Server**: Spring Boot application for backend services
+- **Database**: PostgreSQL for storing problems, user progress, and attempts
+- **Code Execution**: Docker containers for isolated code execution
+- **Frontend Hosting**: Static site hosting for React application
+- **Monitoring**: Logging of common syntax errors and problem completion rates
+
+# Development Roadmap
+
+## MVP Requirements
+### Phase 1: Core Problem Infrastructure
+- Basic problem structure with 20 fundamental problems covering:
+  - 5 primitive data type problems
+  - 5 string manipulation problems
+  - 5 operator usage problems
+  - 5 basic control flow problems
+- Simple code editor with syntax highlighting
+- Basic test case runner with pass/fail indication
+- Static hint system (pre-written hints for each problem)
+
+### Phase 2: Enhanced Learning Experience
+- Add 30 more problems covering:
+  - 10 loop problems (various loop types)
+  - 10 array problems
+  - 10 method problems
+- Implement progressive hint system
+- Add detailed error messages with line-specific feedback
+- Create category-based navigation
+
+### Phase 3: Advanced Features
+- Dynamic hint generation based on common mistakes
+- Code templates and starter code for each problem
+- Progress tracking and visualization
+- Difficulty progression system
+- Add 20 advanced beginner problems combining multiple concepts
+
+## Future Enhancements
+### Advanced Problem Types
+- Multi-file problems
+- Debugging exercises (find and fix the error)
+- Code completion challenges
+- Refactoring exercises
+
+### Learning Analytics
+- Time tracking per problem
+- Common mistake patterns
+- Personalized problem recommendations
+- Weakness identification and targeted practice
+
+### Social Features
+- Compare progress with peers
+- Share solutions (after completion)
+- Collaborative problem solving mode
+- Instructor/student classroom mode
+
+# Logical Dependency Chain
+
+## Foundation (Must be built first)
+1. **Problem Data Model**: Define structure for problems, test cases, and categories
+2. **Code Execution Environment**: Secure sandbox for running user-submitted Java code
+3. **Basic Web Interface**: Simple UI with code editor and problem display
+
+## Core Features (Build on foundation)
+4. **Test Case Runner**: System to execute code against test cases
+5. **Error Handler**: Parse Java compiler errors into beginner-friendly messages
+6. **Static Hint System**: Pre-written hints for initial problem set
+
+## Enhancement Layer (Requires core features)
+7. **Progress Tracking**: Store and retrieve user attempts and completions
+8. **Category Navigation**: Organize problems by topic with suggested learning paths
+9. **Dynamic Hints**: Analyze code attempts to provide contextual hints
+
+## Advanced Features (Final layer)
+10. **Analytics Dashboard**: Visualize progress and identify learning patterns
+11. **Adaptive Difficulty**: Adjust problem difficulty based on performance
+12. **Social Features**: Enable sharing and collaboration
+
+# Risks and Mitigations
+
+## Technical Challenges
+- **Risk**: Code execution security vulnerabilities
+  - **Mitigation**: Use Docker containers with restricted permissions, timeout limits, and resource constraints
+- **Risk**: Scalability of code execution under high load
+  - **Mitigation**: Implement queuing system and horizontal scaling of execution containers
+- **Risk**: Detecting partial correctness in solutions
+  - **Mitigation**: Design comprehensive test cases including edge cases and provide partial credit
+
+## Educational Challenges
+- **Risk**: Problems too difficult for complete beginners
+  - **Mitigation**: Extensive user testing, progressive difficulty, and comprehensive hint system
+- **Risk**: Users memorizing solutions without understanding
+  - **Mitigation**: Randomize test case values, require explanations, and vary problem parameters
+
+## Resource Constraints
+- **Risk**: Creating enough quality problems for comprehensive coverage
+  - **Mitigation**: Start with MVP set, gather user feedback, and iteratively add problems
+- **Risk**: Maintaining and updating problems as Java evolves
+  - **Mitigation**: Focus on fundamental concepts that rarely change, version-specific warnings
+
+# Appendix
+
+## Sample Problems
+
+### Problem 1: Variable Declaration
+**Description**: Declare an integer variable named `age` and initialize it with the value 25.
+**Hints**:
+1. Remember Java is strongly typed - you must specify the data type
+2. The syntax is: [type] [name] = [value];
+3. Integer variables use the keyword 'int'
+
+### Problem 2: String Comparison
+**Description**: Write a method that correctly compares two strings for equality.
+**Hints**:
+1. In Java, == compares references, not content
+2. Strings have a special method for content comparison
+3. The method name starts with 'eq' and ends with 's'
+
+### Problem 3: Loop Sum
+**Description**: Calculate the sum of numbers from 1 to 10 using a for loop.
+**Hints**:
+1. Initialize a sum variable before the loop
+2. For loop syntax: for(initialization; condition; increment)
+3. Add each number to the sum inside the loop
+
+## Learning Path Recommendations
+1. Start with primitive types and variable declaration
+2. Move to operators and expressions
+3. Learn string basics before string manipulation
+4. Master if-else before loops
+5. Understand loops before arrays
+6. Complete arrays before methods
+7. Combine all concepts in final challenges
+
+## Success Metrics
+- 80% of users complete at least 10 problems
+- Average hint usage decreases over time
+- 90% success rate on problems after using hints
+- Time to solve similar problems decreases by 50%
+</PRD>
