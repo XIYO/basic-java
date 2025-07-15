@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter06_arrays;
+package javabasics.chapter06_arrays;
 
 /**
  * Chapter 6 - 배열

@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter05_loops.applied;
+package javabasics.chapter05_loops.applied;
 
 import java.util.Random;
 import java.util.Scanner;

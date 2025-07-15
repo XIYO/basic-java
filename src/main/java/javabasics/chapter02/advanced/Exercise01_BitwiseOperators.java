@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter02.advanced;
+package javabasics.chapter02.advanced;
 
 /**
  * Chapter 02 - 연산자 (Operators) - 고급

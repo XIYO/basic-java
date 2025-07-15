@@ -1,65 +1,125 @@
-package main.java.javabasics.chapter03_strings.basic;
+package javabasics.chapter03_strings.basic;
 
 /**
- * <h3>Chapter 3 - 문자열 (기본)</h3>
- * <h3>문제 1: 문자열 선언과 초기화</h3>
+ * <h1>🎯 문제명: 나의 첫 문자열 만들기!</h1>
  * 
- * <h3>🎯 학습 목표</h3>
- * <ul>
- *   <li>String 타입의 변수를 선언하고 초기화하는 방법을 익힙니다.</li>
- *   <li>문자열 리터럴(literal)의 사용법을 이해합니다.</li>
- * </ul>
+ * <h2>📋 문제 설명</h2>
+ * <p>
+ * 안녕하세요! 이제 <strong>문자열(String)</strong>을 배워볼 차례예요! 🎉<br>
+ * 지금까지 숫자를 담는 상자(int, double)를 만들어봤죠?<br>
+ * 이번에는 <strong>글자를 담는 상자</strong>를 만들어볼 거예요!<br><br>
  * 
- * <h3>📚 배경 지식</h3>
- * <ul>
- *   <li>String은 Java의 참조 타입(Reference Type)입니다.</li>
- *   <li>문자열은 불변(immutable) 객체로, 한 번 생성되면 변경할 수 없습니다.</li>
- *   <li>문자열 리터럴은 큰따옴표("")로 감싸서 표현합니다.</li>
- * </ul>
+ * 📝 문자열이란?<br>
+ * - 여러 글자를 하나로 묶은 것<br>
+ * - "안녕하세요", "Hello", "123" 모두 문자열이에요!<br>
+ * - 큰따옴표(" ")로 감싸서 만들어요
+ * </p>
  * 
- * <h3>⚠️ 주의사항</h3>
- * <ul>
- *   <li>작은따옴표('')는 문자(char) 타입에 사용되므로 문자열에는 사용할 수 없습니다.</li>
- *   <li>String은 대문자 S로 시작합니다 (원시 타입이 아닌 클래스이기 때문).</li>
- * </ul>
+ * <h2>📌 학습 목표</h2>
+ * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ *   <ul>
+ *     <li>✅ String 타입으로 문자열 저장하기</li>
+ *     <li>✅ 큰따옴표(" ") 사용법 익히기</li>
+ *     <li>✅ 문자열 출력하기</li>
+ *   </ul>
+ * </div>
  * 
- * <h3>📝 구현 지시사항</h3>
- * <ol>
- *   <li>greeting이라는 이름의 String 변수를 선언하고 "Hello, Java!"로 초기화하세요.</li>
- *   <li>name이라는 이름의 String 변수를 선언하고 본인의 이름으로 초기화하세요.</li>
- * </ol>
+ * <h2>📝 기초 개념</h2>
+ * <table border="1" style="border-collapse: collapse; margin: 10px;">
+ *   <tr style="background-color: #f0f8ff;">
+ *     <th style="padding: 10px;">구분</th>
+ *     <th style="padding: 10px;">설명</th>
+ *     <th style="padding: 10px;">예시</th>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;"><code>String</code></td>
+ *     <td style="padding: 10px;">문자열을 담는 타입</td>
+ *     <td style="padding: 10px;"><code>String name = "홍길동";</code></td>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;">큰따옴표 " "</td>
+ *     <td style="padding: 10px;">문자열을 감싸는 기호</td>
+ *     <td style="padding: 10px;"><code>"Hello World"</code></td>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;">작은따옴표 ' '</td>
+ *     <td style="padding: 10px;">문자 1개만 (char용)</td>
+ *     <td style="padding: 10px;"><code>'A', 'ㄱ', '1'</code></td>
+ *   </tr>
+ * </table>
  * 
- * <h3>💡 예제 코드</h3>
- * <pre>
- * String message = "Welcome!";  // 문자열 변수 선언과 동시에 초기화
- * String city;                   // 문자열 변수 선언만
- * city = "Seoul";               // 나중에 값 할당
- * </pre>
+ * <h2>⚠️ 초보자가 자주하는 실수</h2>
+ * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ *   <table>
+ *     <tr>
+ *       <th>❌ 잘못된 예</th>
+ *       <th>✅ 올바른 예</th>
+ *       <th>💭 설명</th>
+ *     </tr>
+ *     <tr>
+ *       <td><code>String name = '홍길동';</code></td>
+ *       <td><code>String name = "홍길동";</code></td>
+ *       <td>문자열은 큰따옴표!</td>
+ *     </tr>
+ *     <tr>
+ *       <td><code>string name = "홍길동";</code></td>
+ *       <td><code>String name = "홍길동";</code></td>
+ *       <td>String의 S는 대문자!</td>
+ *     </tr>
+ *     <tr>
+ *       <td><code>String name = 홍길동;</code></td>
+ *       <td><code>String name = "홍길동";</code></td>
+ *       <td>따옴표를 꼭 써주세요!</td>
+ *     </tr>
+ *   </table>
+ * </div>
+ * 
+ * <h2>🎮 도전 과제</h2>
+ * <p>아래 TODO 부분에 코드를 작성해보세요!</p>
  */
 public class Exercise01_StringDeclaration {
     public static void main(String[] args) {
-        // TODO: greeting 변수를 선언하고 "Hello, Java!"로 초기화하세요
-        // String 타입의 변수를 선언하고, 큰따옴표로 감싼 문자열을 할당합니다.
-        // 예시: String 변수명 = "문자열값";
+        /**
+         * 🧑‍💻 여기에 코드를 작성하세요!
+         * 
+         * 📝 작성 순서:
+         * 1️⃣ String    (문자열 타입)
+         * 2️⃣ greeting  (변수 이름)
+         * 3️⃣ =         (넣는다)
+         * 4️⃣ "Hello, Java!" (인사말)
+         * 5️⃣ ;         (문장 끝!)
+         */
+        
+        // 첫 번째 문자열 변수 만들기
+        String greeting = "Hello, Java!";  // 🎉 첫 문자열 완성!
+        
+        // 두 번째 문자열 변수 만들기 (여러분의 이름)
+        String name = "홍길동";  // 🙋 여기에 본인 이름을 넣어주세요!
         
         
-        // TODO: name 변수를 선언하고 본인의 이름으로 초기화하세요
-        // 본인의 이름을 큰따옴표로 감싸서 String 변수에 저장합니다.
-        // 한글 이름도 가능합니다. 예: "홍길동"
-        
-        
-        // 아래 코드는 수정하지 마세요
+        /**
+         * 🖥️ 결과 확인하기
+         * 아래 코드가 여러분이 만든 문자열을 출력해줄 거예요!
+         */
         System.out.println(greeting);
         System.out.println("My name is " + name);
         
-        /*
-         * 🎯 예상 출력:
-         * Hello, Java!
-         * My name is [본인이름]
+        /**
+         * 📋 예상 결과
+         * ┌─────────────────────────┐
+         * │ Hello, Java!            │
+         * │ My name is 홍길동       │
+         * └─────────────────────────┘
          * 
-         * 💡 출력 설명:
-         * - println() 메서드는 문자열을 출력하고 줄바꿈을 합니다.
-         * - + 연산자로 문자열을 연결할 수 있습니다.
+         * 💡 배운 내용:
+         * - String으로 문자열 변수 만들기
+         * - 큰따옴표(" ")로 문자열 감싸기
+         * - + 기호로 문자열 연결하기
+         * 
+         * 🚀 추가 연습:
+         * - 좋아하는 음식을 담는 변수 만들기
+         * - 사는 도시를 담는 변수 만들기
+         * - 여러 문자열을 + 로 연결해보기
          */
     }
 }

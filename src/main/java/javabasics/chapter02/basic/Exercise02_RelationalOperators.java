@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter02.basic;
+package javabasics.chapter02.basic;
 
 /**
  * Chapter 02 - 연산자 (Operators)

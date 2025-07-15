@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter03_strings.basic;
+package javabasics.chapter03_strings.basic;
 
 /**
  * <h2>Chapter 3 - 문자열 (기본)</h2>

@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter03_strings.advanced;
+package javabasics.chapter03_strings.advanced;
 
 /**
  * <h2>Chapter 3 - 문자열 (응용)</h2>

@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter05_loops.applied;
+package javabasics.chapter05_loops.applied;
 
 /**
  * <h2>Chapter 5 - 반복문 (Loops)</h2>

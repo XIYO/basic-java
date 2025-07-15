@@ -1,36 +1,146 @@
-package main.java.javabasics.chapter06_arrays;
+package javabasics.chapter06_arrays;
 
 /**
- * Chapter 6 - 배열
- * 문제 12: 배열 선언과 초기화
+ * <h1>🎯 문제명: 여러 개의 상자를 한번에 만들기 - 배열!</h1>
  * 
- * 목표: 배열을 선언하고 초기화하는 방법을 학습합니다.
+ * <h2>📋 문제 설명</h2>
+ * <p>
+ * 지금까지는 변수를 하나씩 만들었죠? 🎁<br>
+ * 만약 학생 30명의 점수를 저장하려면... 변수를 30개나 만들어야 할까요? 😱<br><br>
  * 
- * 지시사항:
- * 1. 크기가 5인 정수 배열 numbers를 선언하세요
- * 2. 배열의 첫 번째 요소(인덱스 0)에 10을 저장하세요
- * 3. 배열의 세 번째 요소(인덱스 2)에 30을 저장하세요
+ * 걱정 마세요! <strong>배열(Array)</strong>이 있어요! 🎉<br>
+ * 배열은 <strong>같은 종류의 상자를 여러 개 붙여놓은 것</strong>이에요.<br>
+ * 마치 아파트처럼 101호, 102호, 103호... 이렇게 번호가 있어요!
+ * </p>
  * 
- * 힌트:
- * - 배열 선언: int[] 배열명 = new int[크기];
- * - 배열 요소 접근: 배열명[인덱스] = 값;
- * - 인덱스는 0부터 시작합니다
+ * <h2>📌 학습 목표</h2>
+ * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ *   <ul>
+ *     <li>✅ 배열이 무엇인지 이해하기</li>
+ *     <li>✅ 배열을 만드는 방법 배우기</li>
+ *     <li>✅ 배열의 각 칸에 값 넣기</li>
+ *   </ul>
+ * </div>
+ * 
+ * <h2>📝 배열의 기초 개념</h2>
+ * <table border="1" style="border-collapse: collapse; margin: 10px;">
+ *   <tr style="background-color: #f0f8ff;">
+ *     <th style="padding: 10px;">개념</th>
+ *     <th style="padding: 10px;">설명</th>
+ *     <th style="padding: 10px;">예시</th>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;">배열 선언</td>
+ *     <td style="padding: 10px;">타입[] 이름 = new 타입[크기]</td>
+ *     <td style="padding: 10px;"><code>int[] scores = new int[5];</code></td>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;">인덱스</td>
+ *     <td style="padding: 10px;">배열의 각 칸 번호 (0부터 시작!)</td>
+ *     <td style="padding: 10px;">0번, 1번, 2번, 3번, 4번</td>
+ *   </tr>
+ *   <tr>
+ *     <td style="padding: 10px;">값 넣기</td>
+ *     <td style="padding: 10px;">배열이름[인덱스] = 값</td>
+ *     <td style="padding: 10px;"><code>scores[0] = 100;</code></td>
+ *   </tr>
+ * </table>
+ * 
+ * <h2>🏢 배열을 아파트로 생각해보세요!</h2>
+ * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
+ *   <pre style="font-family: monospace;">
+ *   배열: numbers (5개짜리)
+ *   
+ *   ┌────┬────┬────┬────┬────┐
+ *   │ 0호│ 1호│ 2호│ 3호│ 4호│  ← 인덱스 (호수)
+ *   ├────┼────┼────┼────┼────┤
+ *   │    │    │    │    │    │  ← 값 (입주자)
+ *   └────┴────┴────┴────┴────┘
+ *   
+ *   numbers[0] = 10;  // 0호에 10 입주!
+ *   numbers[2] = 30;  // 2호에 30 입주!
+ *   </pre>
+ * </div>
+ * 
+ * <h2>⚠️ 초보자가 자주하는 실수</h2>
+ * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ *   <table>
+ *     <tr>
+ *       <th>❌ 잘못된 예</th>
+ *       <th>✅ 올바른 예</th>
+ *       <th>💭 설명</th>
+ *     </tr>
+ *     <tr>
+ *       <td><code>int numbers[] = new int[5];</code></td>
+ *       <td><code>int[] numbers = new int[5];</code></td>
+ *       <td>[]는 타입 뒤에!</td>
+ *     </tr>
+ *     <tr>
+ *       <td><code>numbers[5] = 50;</code></td>
+ *       <td><code>numbers[4] = 50;</code></td>
+ *       <td>5개짜리는 0~4번까지!</td>
+ *     </tr>
+ *     <tr>
+ *       <td><code>int[] numbers = new int[];</code></td>
+ *       <td><code>int[] numbers = new int[5];</code></td>
+ *       <td>크기를 꼭 정해주세요!</td>
+ *     </tr>
+ *   </table>
+ * </div>
+ * 
+ * <h2>🎮 도전 과제</h2>
+ * <p>5개짜리 정수 배열을 만들고, 0번째와 2번째에 값을 넣어보세요!</p>
  */
 public class Exercise12_ArrayDeclaration {
     public static void main(String[] args) {
-        // TODO: 크기가 5인 정수 배열 numbers를 선언하세요
+        /**
+         * 🧑‍💻 여기에 코드를 작성하세요!
+         * 
+         * 📝 1단계: 5개짜리 정수 배열 만들기
+         * int[]  numbers  =  new int[5];
+         * ─────  ───────     ──────────
+         * 타입    이름        5개 준비!
+         */
+        
+        int[] numbers = new int[5];  // 🏢 5개짜리 아파트 완성!
+        
+        /**
+         * 📝 2단계: 배열에 값 넣기
+         * numbers[0] = 10;  // 0호에 10 입주
+         * numbers[2] = 30;  // 2호에 30 입주
+         */
+        
+        numbers[0] = 10;  // 🏠 첫 번째 칸(0번)에 10 저장!
+        numbers[2] = 30;  // 🏠 세 번째 칸(2번)에 30 저장!
         
         
-        // TODO: 첫 번째 요소에 10, 세 번째 요소에 30을 저장하세요
-        
-        
-        
-        // 아래 코드는 수정하지 마세요
+        /**
+         * 🖥️ 결과 확인하기
+         * 아래 코드가 배열의 값을 출력해줄 거예요!
+         */
         System.out.println("첫 번째 요소: " + numbers[0]);
         System.out.println("세 번째 요소: " + numbers[2]);
         
-        // 예상 출력:
-        // 첫 번째 요소: 10
-        // 세 번째 요소: 30
+        /**
+         * 📋 예상 결과
+         * ┌─────────────────────────┐
+         * │ 첫 번째 요소: 10        │
+         * │ 세 번째 요소: 30        │
+         * └─────────────────────────┘
+         * 
+         * 💡 배열의 현재 상태:
+         * ┌────┬────┬────┬────┬────┐
+         * │ 10 │  0 │ 30 │  0 │  0 │
+         * └────┴────┴────┴────┴────┘
+         *   0번  1번  2번  3번  4번
+         * 
+         * 🤔 왜 나머지는 0일까요?
+         * - int 배열을 만들면 처음에 모든 칸이 0으로 채워져요!
+         * 
+         * 🚀 추가 연습:
+         * - 모든 칸에 값을 넣어보세요
+         * - 배열의 크기를 10으로 늘려보세요
+         * - String 배열도 만들어보세요
+         */
     }
 }

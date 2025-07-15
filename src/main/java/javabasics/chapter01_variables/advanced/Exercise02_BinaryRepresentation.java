@@ -1,4 +1,4 @@
-package main.java.javabasics.chapter01_variables.advanced;
+package javabasics.chapter01_variables.advanced;
 
 /**
  * <h2>Chapter 1: 변수와 데이터 타입 - 심화</h2>
