@@ -1,11 +1,11 @@
-package javabasics.chapter01_variables.advanced;
+package main.java.javabasics.chapter01_variables.advanced;
 
 /**
- * <h1>🎯 문제명: 온도 변환 마법사 되기! 🌡️</h1>
+ * <h3>🎯 문제명: 온도 변환 마법사 되기! 🌡️</h3>
  * 
- * <h2>📋 문제 설명</h2>
+ * <h3>📋 문제 설명</h3>
  * <p>
- * 안녕하세요! 오늘은 여러분이 <strong>온도 변환 마법사</strong>가 되어볼 거예요! ✨<br>
+ * 안녕하세요! 오늘은 여러분이 <b>온도 변환 마법사</b>가 되어볼 거예요! ✨<br>
  * 세계 여행을 할 때, 각 나라마다 온도를 다르게 표현하죠?<br><br>
  * 
  * 🇺🇸 미국: 화씨(Fahrenheit, °F)<br>
@@ -15,55 +15,55 @@ package javabasics.chapter01_variables.advanced;
  * 이번 실습에서는 이 세 가지 온도를 서로 변환하는 프로그램을 만들어볼 거예요!
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ * <h3>📌 학습 목표</h3>
+ * 
  *   <ul>
  *     <li>✅ 실생활에서 사용하는 프로그램 만들기</li>
  *     <li>✅ <code>double</code> 타입으로 정확한 계산하기</li>
  *     <li>✅ <code>final</code> 키워드로 상수 만들기</li>
  *     <li>✅ 논리 연산으로 유효성 검사하기</li>
  *   </ul>
- * </div>
  * 
- * <h2>📝 온도 변환 비법 대공개!</h2>
- * <div style="border: 2px solid #2196f3; border-radius: 8px; padding: 15px; background-color: #e3f2fd;">
+ * 
+ * <h3>📝 온도 변환 비법 대공개!</h3>
+ * 
  *   <h3>🧮 변환 공식 비법서</h3>
- *   <table border="1" cellpadding="10" style="border-collapse: collapse;">
- *     <tr style="background-color: #bbdefb;">
+ *   <table border="1" cellpadding="10">
+ *     <tr>
  *       <th>🔄 변환</th>
  *       <th>📈 마법 공식</th>
  *       <th>💡 예시</th>
  *     </tr>
  *     <tr>
  *       <td>섭씨 → 화씨</td>
- *       <td><code style="background-color: #fffacd;">(C × 9/5) + 32</code></td>
+ *       <td><code>(C × 9/5) + 32</code></td>
  *       <td>25°C = 77°F</td>
  *     </tr>
  *     <tr>
  *       <td>섭씨 → 켈빈</td>
- *       <td><code style="background-color: #fffacd;">C + 273.15</code></td>
+ *       <td><code>C + 273.15</code></td>
  *       <td>25°C = 298.15K</td>
  *     </tr>
  *     <tr>
  *       <td>화씨 → 섭씨</td>
- *       <td><code style="background-color: #fffacd;">(F - 32) × 5/9</code></td>
+ *       <td><code>(F - 32) × 5/9</code></td>
  *       <td>77°F = 25°C</td>
  *     </tr>
  *   </table>
  *   
  *   <h3>❄️ 절대 영도 - 우주에서 가장 추운 온도!</h3>
- *   <div style="background-color: #f0f8ff; padding: 10px; margin: 10px 0;">
- *     <p>🥶 <strong>절대 영도</strong>란? 이보다 더 차가워질 수 없는 온도예요!</p>
+ *   
+ *     <p>🥶 <b>절대 영도</b>란? 이보다 더 차가워질 수 없는 온도예요!</p>
  *     <ul>
- *       <li>🌡️ 섭씨: <strong>-273.15°C</strong></li>
- *       <li>🌡️ 화씨: <strong>-459.67°F</strong></li>
- *       <li>🌡️ 켈빈: <strong>0K</strong></li>
+ *       <li>🌡️ 섭씨: <b>-273.15°C</b></li>
+ *       <li>🌡️ 화씨: <b>-459.67°F</b></li>
+ *       <li>🌡️ 켈빈: <b>0K</b></li>
  *     </ul>
- *   </div>
+ *   
  *   
  *   <h3>🌍 일상 생활 온도 비교</h3>
- *   <table border="1" cellpadding="10" style="border-collapse: collapse;">
- *     <tr style="background-color: #bbdefb;">
+ *   <table border="1" cellpadding="10">
+ *     <tr>
  *       <th>🌡️ 상황</th>
  *       <th>섭씨</th>
  *       <th>화씨</th>
@@ -94,10 +94,10 @@ package javabasics.chapter01_variables.advanced;
  *       <td>311K</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
- * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
+ * 
+ * <h3>🎮 도전 과제</h3>
+ * 
  *   <h3>📝 미션 설명</h3>
  *   <ol>
  *     <li>🌡️ 25°C를 화씨와 켈빈으로 변환하기</li>
@@ -105,21 +105,21 @@ package javabasics.chapter01_variables.advanced;
  *     <li>❄️ 절대 영도 상수 만들기</li>
  *     <li>✅ 온도가 유효한지 검사하기</li>
  *   </ol>
- * </div>
  * 
- * <h2>💡 히어로 팁</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ * 
+ * <h3>💡 히어로 팁</h3>
+ * 
  *   <ul>
- *     <li>🎯 <strong>double 타입</strong>을 써야 소수점 계산이 정확해요!</li>
- *     <li>🔒 <strong>final</strong> 키워드를 사용하면 값을 못 바꿔요! (상수)</li>
+ *     <li>🎯 <b>double 타입</b>을 써야 소수점 계산이 정확해요!</li>
+ *     <li>🔒 <b>final</b> 키워드를 사용하면 값을 못 바꿔요! (상수)</li>
  *     <li>🤔 9/5라고 쓰면 정수 나눗셈! 9.0/5.0이라고 써야 해요!</li>
  *     <li>📏 변수명은 의미 있게! celsius, fahrenheit, kelvin</li>
  *   </ul>
- * </div>
  * 
- * @author Task Master AI
+ * 
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise01_TemperatureConverter {
     public static void main(String[] args) {
@@ -133,18 +133,24 @@ public class Exercise01_TemperatureConverter {
         double kelvin;              // 🧪 켈빈 결과를 담을 상자
         
         // 2️⃣ 섭씨 → 화씨 변환 마법!
-        fahrenheit = (celsius * 9.0 / 5.0) + 32;    // ✨ 공식 적용!
+        // TODO: celsius를 화씨로 변환하는 코드를 작성하세요
+        // 힌트: (celsius * 9.0 / 5.0) + 32
+        fahrenheit = 0.0; // 여기에 변환 공식을 작성하세요
         
         // 3️⃣ 섭씨 → 켈빈 변환 마법!
-        kelvin = celsius + 273.15;                  // ✨ 간단한 마법!
+        // TODO: celsius를 켈빈으로 변환하는 코드를 작성하세요
+        // 힌트: celsius + 273.15
+        kelvin = 0.0; // 여기에 변환 공식을 작성하세요
         
         // 4️⃣ 절대 영도 상수 만들기 (바꿀 수 없는 값!)
-        final double ABSOLUTE_ZERO_C = -273.15;     // ❄️ 섭씨 절대 영도
-        final double ABSOLUTE_ZERO_F = -459.67;     // ❄️ 화씨 절대 영도
-        final double ABSOLUTE_ZERO_K = 0.0;         // ❄️ 켈빈 절대 영도
+        // TODO: 절대 영도 상수를 선언하세요 (final 키워드 사용)
+        final double ABSOLUTE_ZERO_C = 0.0; // TODO: -273.15로 변경하세요
+        final double ABSOLUTE_ZERO_F = 0.0; // TODO: -459.67로 변경하세요
+        final double ABSOLUTE_ZERO_K = 1.0; // TODO: 0.0으로 변경하세요
         
         // 5️⃣ 온도가 가능한지 검사! (절대 영도보다 높아야 함)
-        boolean isValidTemp = celsius >= ABSOLUTE_ZERO_C;  // ✅ true/false
+        // TODO: celsius가 절대 영도보다 크거나 같은지 확인하는 코드를 작성하세요
+        boolean isValidTemp = false; // TODO: celsius >= ABSOLUTE_ZERO_C로 변경하세요
         
         // 6️⃣ 결과 출력하기
         System.out.println("🌡️ === 온도 변환 결과 === 🌡️");
@@ -159,13 +165,13 @@ public class Exercise01_TemperatureConverter {
         double waterBoilingC = 100.0;   // 물이 끓는 온도
         double waterFreezingC = 0.0;    // 물이 어는 온도
         
-        // 물의 끓는점 변환
-        double waterBoilingF = (waterBoilingC * 9.0 / 5.0) + 32;
-        double waterBoilingK = waterBoilingC + 273.15;
+        // TODO: 물의 끓는점을 화씨와 켈빈으로 변환하는 코드를 작성하세요
+        double waterBoilingF = 0.0; // TODO: (waterBoilingC * 9.0 / 5.0) + 32로 변경하세요
+        double waterBoilingK = 0.0; // TODO: waterBoilingC + 273.15로 변경하세요
         
-        // 물의 어는점 변환
-        double waterFreezingF = (waterFreezingC * 9.0 / 5.0) + 32;
-        double waterFreezingK = waterFreezingC + 273.15;
+        // TODO: 물의 어는점을 화씨와 켈빈으로 변환하는 코드를 작성하세요
+        double waterFreezingF = 0.0; // TODO: (waterFreezingC * 9.0 / 5.0) + 32로 변경하세요
+        double waterFreezingK = 0.0; // TODO: waterFreezingC + 273.15로 변경하세요
         
         System.out.println("물의 끓는점: " + waterBoilingC + "°C = " + 
                           waterBoilingF + "°F = " + waterBoilingK + "K");

@@ -1,13 +1,13 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
- * <h2>Chapter 1: 변수와 데이터 타입</h2>
+ * <h3>Chapter 1: 변수와 데이터 타입</h3>
  * <h3>문제 6: 문자 타입과 유니코드 (Character Type and Unicode)</h3>
  * 
- * <p><strong>목표:</strong> <code>char</code> 타입과 유니코드의 관계를 이해합니다.</p>
+ * <p><b>목표:</b> <code>char</code> 타입과 유니코드의 관계를 이해합니다.</p>
  * 
  * <h4>학습 내용:</h4>
- * <div style="border: 2px solid #673ab7; border-radius: 8px; padding: 15px; background-color: #f3e5f5;">
+ * 
  *   <h5>char 타입의 특징</h5>
  *   <ul>
  *     <li>16비트 유니코드 문자 (0 ~ 65,535)</li>
@@ -17,7 +17,7 @@ package javabasics.chapter01_variables.basic;
  *   
  *   <h5>char 변수 초기화 방법</h5>
  *   <table border="1" cellpadding="5">
- *     <tr style="background-color: #e1bee7;">
+ *     <tr>
  *       <th>방법</th>
  *       <th>예시</th>
  *       <th>설명</th>
@@ -46,7 +46,7 @@ package javabasics.chapter01_variables.basic;
  *     <li><code>'\''</code> - 작은따옴표</li>
  *     <li><code>'\\'</code> - 역슬래시</li>
  *   </ul>
- * </div>
+ * 
  * 
  * <h4>지시사항:</h4>
  * <ol>
@@ -62,39 +62,42 @@ package javabasics.chapter01_variables.basic;
  *   <li>한글도 유니코드 문자로 표현 가능</li>
  * </ul>
  * 
- * @author Task Master AI
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise06_CharAndUnicode {
     public static void main(String[] args) {
-        // TODO: Declare chars using different methods
+        // TODO: 다양한 방법으로 char 변수 선언하기
         
-        // Method 1: Direct character
-        // char letter = 'A';
+        // 방법 1: 직접 문자 할당
+        // 여기에 'A' 문자를 letter 변수에 할당하는 코드를 작성하세요
+        char letter = ' '; // TODO: 'A'로 변경하세요
         
-        // Method 2: Unicode escape sequence
-        // char unicodeLetter = '\u0041';  // This is 'A'
+        // 방법 2: 유니코드 이스케이프 시퀀스
+        // 여기에 '\u0041' (이것도 'A'입니다)를 할당하는 코드를 작성하세요
+        char unicodeLetter = ' '; // TODO: '\u0041'로 변경하세요
         
-        // Method 3: Integer value (ASCII/Unicode code)
-        // char asciiLetter = 65;  // This is also 'A'
+        // 방법 3: 정수값 (ASCII/유니코드 코드)
+        // 여기에 65 (이것도 'A'입니다)를 할당하는 코드를 작성하세요
+        char asciiLetter = ' '; // TODO: 65로 변경하세요
         
-        // TODO: Print chars and their Unicode values
-        // System.out.println("Character: " + letter + ", Unicode value: " + (int)letter);
+        // TODO: 문자와 유니코드 값 출력하기
+        System.out.println("Character: " + letter + ", Unicode value: " + (int)letter);
+        System.out.println("Unicode char: " + unicodeLetter);
+        System.out.println("ASCII char: " + asciiLetter);
         
-        // TODO: Work with Korean characters
-        // char koreanChar = '한';
-        // System.out.println("Korean character: " + koreanChar + ", Unicode value: " + (int)koreanChar);
+        // TODO: 한글 문자 다루기
+        // 여기에 '한' 문자를 할당하고 출력하는 코드를 작성하세요
+        char koreanChar = ' '; // TODO: '한'으로 변경하세요
+        // 여기에 한글 문자와 유니코드 값을 출력하는 코드를 작성하세요
         
-        // TODO: Special characters and escape sequences
-        // char newline = '\n';
-        // char tab = '\t';
-        // char quote = '\'';
-        // char backslash = '\\';
+        // TODO: 특수 문자와 이스케이프 시퀀스
+        // 여기에 줄바꿈('\n'), 탭('\t'), 작은따옴표('\''), 역슬래시('\\')를 할당하는 코듍드를 작성하세요
         
-        // TODO: Character arithmetic
-        // char nextLetter = (char)(letter + 1);  // 'B'
-        // System.out.println("Next letter after " + letter + " is " + nextLetter);
+        // TODO: 문자 연산
+        // 여기에 letter의 다음 문자를 계산하는 코드를 작성하세요 ('A' 다음은 'B')
+        // 힌트: char nextLetter = (char)(letter + 1);
         
         // Expected output:
         // Character: A, Unicode value: 65

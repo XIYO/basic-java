@@ -1,13 +1,13 @@
-package javabasics.chapter01_variables.advanced;
+package main.java.javabasics.chapter01_variables.advanced;
 
 /**
- * <h2>Chapter 1: 변수와 데이터 타입 - 심화</h2>
+ * <h3>Chapter 1: 변수와 데이터 타입 - 심화</h3>
  * <h3>문제 5: 데이터 압축 시뮬레이션 (Data Compression Simulation)</h3>
  * 
- * <p><strong>목표:</strong> 여러 값을 더 작은 데이터 타입에 압축하여 저장하는 방법을 학습합니다.</p>
+ * <p><b>목표:</b> 여러 값을 더 작은 데이터 타입에 압축하여 저장하는 방법을 학습합니다.</p>
  * 
  * <h4>학습 내용:</h4>
- * <div style="border: 2px solid #3f51b5; border-radius: 8px; padding: 15px; background-color: #e8eaf6;">
+ * 
  *   <h5>비트 플래그 (Bit Flags)</h5>
  *   <ul>
  *     <li>1바이트(8비트)에 8개의 boolean 값 저장 가능</li>
@@ -17,7 +17,7 @@ package javabasics.chapter01_variables.advanced;
  *   
  *   <h5>비트 플래그 예시</h5>
  *   <table border="1" cellpadding="5">
- *     <tr style="background-color: #c5cae9;">
+ *     <tr>
  *       <th>비트 위치</th>
  *       <th>값</th>
  *       <th>의미</th>
@@ -59,7 +59,7 @@ package javabasics.chapter01_variables.advanced;
  *   </table>
  *   
  *   <h5>날짜 압축 (Date Packing)</h5>
- *   <pre style="background-color: #f5f5f5; padding: 10px;">
+ *   <pre>
  * 날짜 구성요소:
  * - 연도: 11비트 (0-2047 범위)
  * - 월: 4비트 (1-12 범위)  
@@ -76,7 +76,7 @@ package javabasics.chapter01_variables.advanced;
  *   
  *   <h5>비트 연산 기법</h5>
  *   <table border="1" cellpadding="5">
- *     <tr style="background-color: #c5cae9;">
+ *     <tr>
  *       <th>연산</th>
  *       <th>코드</th>
  *       <th>설명</th>
@@ -105,12 +105,12 @@ package javabasics.chapter01_variables.advanced;
  *   
  *   <h5>실제 활용 분야</h5>
  *   <ul>
- *     <li><strong>네트워크 프로토콜:</strong> 헤더 정보 압축</li>
- *     <li><strong>파일 포맷:</strong> 메타데이터 저장</li>
- *     <li><strong>임베디드 시스템:</strong> 메모리 제한 환경</li>
- *     <li><strong>게임 개발:</strong> 상태 플래그 관리</li>
+ *     <li><b>네트워크 프로토콜:</b> 헤더 정보 압축</li>
+ *     <li><b>파일 포맷:</b> 메타데이터 저장</li>
+ *     <li><b>임베디드 시스템:</b> 메모리 제한 환경</li>
+ *     <li><b>게임 개발:</b> 상태 플래그 관리</li>
  *   </ul>
- * </div>
+ * 
  * 
  * <h4>지시사항:</h4>
  * <ol>
@@ -126,79 +126,79 @@ package javabasics.chapter01_variables.advanced;
  *   <li>비트 추출: 시프트와 마스크 조합</li>
  * </ul>
  * 
- * @author Task Master AI
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise05_DataCompression {
     public static void main(String[] args) {
-        // TODO: Pack 8 boolean flags into a single byte
-        // Game character status flags
-        // boolean isAlive = true;        // bit 0
-        // boolean hasWeapon = true;      // bit 1
-        // boolean hasShield = false;     // bit 2
-        // boolean isPoisoned = false;    // bit 3
-        // boolean isInvisible = true;    // bit 4
-        // boolean canFly = false;        // bit 5
-        // boolean hasMagic = true;       // bit 6
-        // boolean isBoss = false;        // bit 7
+        // TODO: 8개의 boolean 플래그를 하나의 byte로 압축하기
+        // 게임 캐릭터 상태 플래그
+        // 여기에 8개의 boolean 변수를 선언하는 코드를 작성하세요
+        boolean isAlive = true;        // bit 0
+        boolean hasWeapon = true;      // bit 1
+        boolean hasShield = false;     // bit 2
+        boolean isPoisoned = false;    // bit 3
+        boolean isInvisible = true;    // bit 4
+        boolean canFly = false;        // bit 5
+        boolean hasMagic = true;       // bit 6
+        boolean isBoss = false;        // bit 7
         
-        // Pack into byte using bit operations
-        // byte statusFlags = 0;
-        // if (isAlive) statusFlags |= (1 << 0);
-        // if (hasWeapon) statusFlags |= (1 << 1);
-        // if (hasShield) statusFlags |= (1 << 2);
-        // if (isPoisoned) statusFlags |= (1 << 3);
-        // if (isInvisible) statusFlags |= (1 << 4);
-        // if (canFly) statusFlags |= (1 << 5);
-        // if (hasMagic) statusFlags |= (1 << 6);
-        // if (isBoss) statusFlags |= (1 << 7);
+        // 비트 연산을 사용하여 byte로 포장하기
+        byte statusFlags = 0;
+        // TODO: 각 boolean 값에 따라 해당 비트를 설정하는 코드를 작성하세요
+        // 예시: if (isAlive) statusFlags |= (1 << 0);
+        // 여기에 나머지 boolean 값들을 비트로 설정하는 코드를 작성하세요
         
-        // TODO: Pack date into single int (year, month, day)
-        // Date: 2024-03-15
-        // int year = 2024;  // Uses 11 bits (0-2047)
-        // int month = 3;    // Uses 4 bits (1-12)
-        // int day = 15;     // Uses 5 bits (1-31)
+        // TODO: 날짜를 하나의 int로 포장하기 (year, month, day)
+        // 날짜: 2024-03-15
+        int year = 2024;  // 11비트 사용 (0-2047)
+        int month = 3;    // 4비트 사용 (1-12)
+        int day = 15;     // 5비트 사용 (1-31)
         
-        // Pack: YYYYYYYYYYY MMMM DDDDD (total 20 bits, fits in int)
-        // int packedDate = (year << 9) | (month << 5) | day;
+        // 포장: YYYYYYYYYYY MMMM DDDDD (총 20비트, int에 적합)
+        // TODO: 날짜를 하나의 int로 포장하는 코드를 작성하세요
+        int packedDate = 0; // TODO: (year << 9) | (month << 5) | day로 변경하세요
         
-        // TODO: Pack RGB color into single int (with alpha)
-        // ARGB format: AAAAAAAA RRRRRRRR GGGGGGGG BBBBBBBB
-        // int alpha = 255;  // Fully opaque
-        // int red = 200;
-        // int green = 100;
-        // int blue = 50;
-        // int packedColor = (alpha << 24) | (red << 16) | (green << 8) | blue;
+        // TODO: RGB 색상을 하나의 int로 포장하기 (알파 포함)
+        // ARGB 형식: AAAAAAAA RRRRRRRR GGGGGGGG BBBBBBBB
+        int alpha = 255;  // 완전 불투명
+        int red = 200;
+        int green = 100;
+        int blue = 50;
+        // TODO: ARGB를 하나의 int로 포장하는 코드를 작성하세요
+        int packedColor = 0; // TODO: (alpha << 24) | (red << 16) | (green << 8) | blue로 변경하세요
         
-        // TODO: Unpack the data
-        // Unpack status flags
-        // boolean unpackedAlive = (statusFlags & (1 << 0)) != 0;
-        // boolean unpackedWeapon = (statusFlags & (1 << 1)) != 0;
-        // boolean unpackedInvisible = (statusFlags & (1 << 4)) != 0;
+        // TODO: 데이터 해제하기
+        // 상태 플래그 해제
+        // TODO: 포장된 플래그에서 각 boolean 값을 추출하는 코드를 작성하세요
+        boolean unpackedAlive = false; // TODO: (statusFlags & (1 << 0)) != 0으로 변경하세요
+        boolean unpackedWeapon = false; // TODO: (statusFlags & (1 << 1)) != 0으로 변경하세요
+        boolean unpackedInvisible = false; // TODO: (statusFlags & (1 << 4)) != 0으로 변경하세요
         
-        // Unpack date
-        // int unpackedYear = (packedDate >> 9) & 0x7FF;  // 11 bits
-        // int unpackedMonth = (packedDate >> 5) & 0xF;   // 4 bits
-        // int unpackedDay = packedDate & 0x1F;           // 5 bits
+        // 날짜 해제
+        // TODO: 포장된 날짜에서 연도, 월, 일을 추출하는 코드를 작성하세요
+        int unpackedYear = 0; // TODO: (packedDate >> 9) & 0x7FF로 변경하세요 (11비트)
+        int unpackedMonth = 0; // TODO: (packedDate >> 5) & 0xF로 변경하세요 (4비트)
+        int unpackedDay = 0; // TODO: packedDate & 0x1F로 변경하세요 (5비트)
         
-        // Display results
-        // System.out.println("===== Data Compression =====");
-        // System.out.println("\nStatus Flags:");
-        // System.out.println("Packed byte value: " + statusFlags);
-        // System.out.println("Binary: " + String.format("%8s", Integer.toBinaryString(statusFlags & 0xFF)).replace(' ', '0'));
-        // System.out.println("Unpacked - Alive: " + unpackedAlive);
-        // System.out.println("Unpacked - Has Weapon: " + unpackedWeapon);
-        // System.out.println("Unpacked - Invisible: " + unpackedInvisible);
+        // 결과 출력
+        System.out.println("===== Data Compression =====");
+        System.out.println("\nStatus Flags:");
+        System.out.println("Packed byte value: " + statusFlags);
+        System.out.println("Binary: " + String.format("%8s", Integer.toBinaryString(statusFlags & 0xFF)).replace(' ', '0'));
+        System.out.println("Unpacked - Alive: " + unpackedAlive);
+        System.out.println("Unpacked - Has Weapon: " + unpackedWeapon);
+        System.out.println("Unpacked - Invisible: " + unpackedInvisible);
         
-        // System.out.println("\nPacked Date:");
-        // System.out.println("Original: " + year + "-" + month + "-" + day);
-        // System.out.println("Packed int: " + packedDate);
-        // System.out.println("Unpacked: " + unpackedYear + "-" + unpackedMonth + "-" + unpackedDay);
+        System.out.println("\nPacked Date:");
+        System.out.println("Original: " + year + "-" + month + "-" + day);
+        System.out.println("Packed int: " + packedDate);
+        System.out.println("Unpacked: " + unpackedYear + "-" + unpackedMonth + "-" + unpackedDay);
         
-        // System.out.println("\nMemory Saved:");
-        // System.out.println("8 booleans (8 bytes) -> 1 byte: " + (8-1) + " bytes saved");
-        // System.out.println("3 ints for date (12 bytes) -> 1 int (4 bytes): " + (12-4) + " bytes saved");
+        System.out.println("\nMemory Saved:");
+        System.out.println("8 booleans (8 bytes) -> 1 byte: " + (8-1) + " bytes saved");
+        System.out.println("3 ints for date (12 bytes) -> 1 int (4 bytes): " + (12-4) + " bytes saved");
         
         // Expected output:
         // ===== Data Compression =====

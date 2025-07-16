@@ -1,8 +1,8 @@
-package javabasics.chapter04_conditions.basic;
+package main.java.javabasics.chapter04_conditions.basic;
 
 /**
- * <h1>Chapter 4 - 조건문</h1>
- * <h2>문제 4: 중첩 if문 (Nested If Statements)</h2>
+ * <h3>Chapter 4 - 조건문</h3>
+ * <h3>문제 4: 중첩 if문 (Nested If Statements)</h3>
  * 
  * <h3>📚 학습 목표</h3>
  * <ul>
@@ -44,9 +44,9 @@ package javabasics.chapter04_conditions.basic;
  * }
  * </pre>
  * 
- * @author 자바학습자
+ * @author XIYO
  * @version 1.0
- * @since Chapter04
+ * @since 2025-07-15
  */
 public class Exercise04_NestedIf {
     public static void main(String[] args) {

@@ -1,13 +1,13 @@
-package javabasics.chapter03_strings.basic;
+package main.java.javabasics.chapter03_strings.basic;
 
 /**
- * <h1>🎯 문제명: 나의 첫 문자열 만들기!</h1>
+ * <h3>🎯 문제명: 나의 첫 문자열 만들기!</h3>
  * 
- * <h2>📋 문제 설명</h2>
+ * <h3>📋 문제 설명</h3>
  * <p>
- * 안녕하세요! 이제 <strong>문자열(String)</strong>을 배워볼 차례예요! 🎉<br>
+ * 안녕하세요! 이제 <b>문자열(String)</b>을 배워볼 차례예요! 🎉<br>
  * 지금까지 숫자를 담는 상자(int, double)를 만들어봤죠?<br>
- * 이번에는 <strong>글자를 담는 상자</strong>를 만들어볼 거예요!<br><br>
+ * 이번에는 <b>글자를 담는 상자</b>를 만들어볼 거예요!<br><br>
  * 
  * 📝 문자열이란?<br>
  * - 여러 글자를 하나로 묶은 것<br>
@@ -15,41 +15,41 @@ package javabasics.chapter03_strings.basic;
  * - 큰따옴표(" ")로 감싸서 만들어요
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ * <h3>📌 학습 목표</h3>
+ * 
  *   <ul>
  *     <li>✅ String 타입으로 문자열 저장하기</li>
  *     <li>✅ 큰따옴표(" ") 사용법 익히기</li>
  *     <li>✅ 문자열 출력하기</li>
  *   </ul>
- * </div>
  * 
- * <h2>📝 기초 개념</h2>
- * <table border="1" style="border-collapse: collapse; margin: 10px;">
- *   <tr style="background-color: #f0f8ff;">
- *     <th style="padding: 10px;">구분</th>
- *     <th style="padding: 10px;">설명</th>
- *     <th style="padding: 10px;">예시</th>
+ * 
+ * <h3>📝 기초 개념</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>구분</th>
+ *     <th>설명</th>
+ *     <th>예시</th>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>String</code></td>
- *     <td style="padding: 10px;">문자열을 담는 타입</td>
- *     <td style="padding: 10px;"><code>String name = "홍길동";</code></td>
+ *     <td><code>String</code></td>
+ *     <td>문자열을 담는 타입</td>
+ *     <td><code>String name = "홍길동";</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">큰따옴표 " "</td>
- *     <td style="padding: 10px;">문자열을 감싸는 기호</td>
- *     <td style="padding: 10px;"><code>"Hello World"</code></td>
+ *     <td>큰따옴표 " "</td>
+ *     <td>문자열을 감싸는 기호</td>
+ *     <td><code>"Hello World"</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">작은따옴표 ' '</td>
- *     <td style="padding: 10px;">문자 1개만 (char용)</td>
- *     <td style="padding: 10px;"><code>'A', 'ㄱ', '1'</code></td>
+ *     <td>작은따옴표 ' '</td>
+ *     <td>문자 1개만 (char용)</td>
+ *     <td><code>'A', 'ㄱ', '1'</code></td>
  *   </tr>
  * </table>
  * 
- * <h2>⚠️ 초보자가 자주하는 실수</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ * <h3>⚠️ 초보자가 자주하는 실수</h3>
+ * 
  *   <table>
  *     <tr>
  *       <th>❌ 잘못된 예</th>
@@ -72,9 +72,9 @@ package javabasics.chapter03_strings.basic;
  *       <td>따옴표를 꼭 써주세요!</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
+ * 
+ * <h3>🎮 도전 과제</h3>
  * <p>아래 TODO 부분에 코드를 작성해보세요!</p>
  */
 public class Exercise01_StringDeclaration {
@@ -90,11 +90,13 @@ public class Exercise01_StringDeclaration {
          * 5️⃣ ;         (문장 끝!)
          */
         
-        // 첫 번째 문자열 변수 만들기
-        String greeting = "Hello, Java!";  // 🎉 첫 문자열 완성!
+        // TODO: 첫 번째 문자열 변수 만들기
+        // 힌트: String 타입의 greeting 변수를 선언하고 "Hello, Java!" 문자열을 저장하세요
+        String greeting = ???;
         
-        // 두 번째 문자열 변수 만들기 (여러분의 이름)
-        String name = "홍길동";  // 🙋 여기에 본인 이름을 넣어주세요!
+        // TODO: 두 번째 문자열 변수 만들기 (여러분의 이름)
+        // 힌트: String 타입의 name 변수를 선언하고 여러분의 이름을 큰따옴표로 감싸서 저장하세요  
+        String name = ???;
         
         
         /**

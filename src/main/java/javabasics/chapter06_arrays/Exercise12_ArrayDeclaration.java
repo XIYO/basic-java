@@ -1,54 +1,54 @@
-package javabasics.chapter06_arrays;
+package main.java.javabasics.chapter06_arrays;
 
 /**
- * <h1>🎯 문제명: 여러 개의 상자를 한번에 만들기 - 배열!</h1>
+ * <h3>🎯 문제명: 여러 개의 상자를 한번에 만들기 - 배열!</h3>
  * 
- * <h2>📋 문제 설명</h2>
+ * <h3>📋 문제 설명</h3>
  * <p>
  * 지금까지는 변수를 하나씩 만들었죠? 🎁<br>
  * 만약 학생 30명의 점수를 저장하려면... 변수를 30개나 만들어야 할까요? 😱<br><br>
  * 
- * 걱정 마세요! <strong>배열(Array)</strong>이 있어요! 🎉<br>
- * 배열은 <strong>같은 종류의 상자를 여러 개 붙여놓은 것</strong>이에요.<br>
+ * 걱정 마세요! <b>배열(Array)</b>이 있어요! 🎉<br>
+ * 배열은 <b>같은 종류의 상자를 여러 개 붙여놓은 것</b>이에요.<br>
  * 마치 아파트처럼 101호, 102호, 103호... 이렇게 번호가 있어요!
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ * <h3>📌 학습 목표</h3>
+ * 
  *   <ul>
  *     <li>✅ 배열이 무엇인지 이해하기</li>
  *     <li>✅ 배열을 만드는 방법 배우기</li>
  *     <li>✅ 배열의 각 칸에 값 넣기</li>
  *   </ul>
- * </div>
  * 
- * <h2>📝 배열의 기초 개념</h2>
- * <table border="1" style="border-collapse: collapse; margin: 10px;">
- *   <tr style="background-color: #f0f8ff;">
- *     <th style="padding: 10px;">개념</th>
- *     <th style="padding: 10px;">설명</th>
- *     <th style="padding: 10px;">예시</th>
+ * 
+ * <h3>📝 배열의 기초 개념</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>개념</th>
+ *     <th>설명</th>
+ *     <th>예시</th>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">배열 선언</td>
- *     <td style="padding: 10px;">타입[] 이름 = new 타입[크기]</td>
- *     <td style="padding: 10px;"><code>int[] scores = new int[5];</code></td>
+ *     <td>배열 선언</td>
+ *     <td>타입[] 이름 = new 타입[크기]</td>
+ *     <td><code>int[] scores = new int[5];</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">인덱스</td>
- *     <td style="padding: 10px;">배열의 각 칸 번호 (0부터 시작!)</td>
- *     <td style="padding: 10px;">0번, 1번, 2번, 3번, 4번</td>
+ *     <td>인덱스</td>
+ *     <td>배열의 각 칸 번호 (0부터 시작!)</td>
+ *     <td>0번, 1번, 2번, 3번, 4번</td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">값 넣기</td>
- *     <td style="padding: 10px;">배열이름[인덱스] = 값</td>
- *     <td style="padding: 10px;"><code>scores[0] = 100;</code></td>
+ *     <td>값 넣기</td>
+ *     <td>배열이름[인덱스] = 값</td>
+ *     <td><code>scores[0] = 100;</code></td>
  *   </tr>
  * </table>
  * 
- * <h2>🏢 배열을 아파트로 생각해보세요!</h2>
- * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
- *   <pre style="font-family: monospace;">
+ * <h3>🏢 배열을 아파트로 생각해보세요!</h3>
+ * 
+ *   <pre>
  *   배열: numbers (5개짜리)
  *   
  *   ┌────┬────┬────┬────┬────┐
@@ -60,10 +60,10 @@ package javabasics.chapter06_arrays;
  *   numbers[0] = 10;  // 0호에 10 입주!
  *   numbers[2] = 30;  // 2호에 30 입주!
  *   </pre>
- * </div>
  * 
- * <h2>⚠️ 초보자가 자주하는 실수</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ * 
+ * <h3>⚠️ 초보자가 자주하는 실수</h3>
+ * 
  *   <table>
  *     <tr>
  *       <th>❌ 잘못된 예</th>
@@ -86,9 +86,9 @@ package javabasics.chapter06_arrays;
  *       <td>크기를 꼭 정해주세요!</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
+ * 
+ * <h3>🎮 도전 과제</h3>
  * <p>5개짜리 정수 배열을 만들고, 0번째와 2번째에 값을 넣어보세요!</p>
  */
 public class Exercise12_ArrayDeclaration {

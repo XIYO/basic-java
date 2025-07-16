@@ -1,16 +1,16 @@
-package javabasics.chapter01_variables.advanced;
+package main.java.javabasics.chapter01_variables.advanced;
 
 /**
- * <h2>Chapter 1: 변수와 데이터 타입 - 심화</h2>
+ * <h3>Chapter 1: 변수와 데이터 타입 - 심화</h3>
  * <h3>문제 2: 진법과 비트 연산 (Binary and Hexadecimal Representation)</h3>
  * 
- * <p><strong>목표:</strong> 기본 타입이 메모리에 저장되는 방식을 이해합니다.</p>
+ * <p><b>목표:</b> 기본 타입이 메모리에 저장되는 방식을 이해합니다.</p>
  * 
  * <h4>학습 내용:</h4>
- * <div style="border: 2px solid #795548; border-radius: 8px; padding: 15px; background-color: #efebe9;">
+ * 
  *   <h5>숫자 표현 방식</h5>
  *   <table border="1" cellpadding="5">
- *     <tr style="background-color: #d7ccc8;">
+ *     <tr>
  *       <th>진법</th>
  *       <th>접두사</th>
  *       <th>예시 (42)</th>
@@ -44,7 +44,7 @@ package javabasics.chapter01_variables.advanced;
  *   
  *   <h5>비트 연산자</h5>
  *   <table border="1" cellpadding="5">
- *     <tr style="background-color: #d7ccc8;">
+ *     <tr>
  *       <th>연산자</th>
  *       <th>이름</th>
  *       <th>설명</th>
@@ -94,7 +94,7 @@ package javabasics.chapter01_variables.advanced;
  *     <li>비트 반전 후 1 더하기</li>
  *     <li>예: <code>-1 = ~0 + 1 = 11111111</code></li>
  *   </ul>
- * </div>
+ * 
  * 
  * <h4>지시사항:</h4>
  * <ol>
@@ -110,50 +110,55 @@ package javabasics.chapter01_variables.advanced;
  *   <li><code>Integer.toBinaryString()</code>으로 2진 문자열 확인</li>
  * </ul>
  * 
- * @author Task Master AI
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise02_BinaryRepresentation {
     public static void main(String[] args) {
-        // TODO: Declare integers using different number systems
-        // int decimal = 42;
-        // int binary = 0b101010;  // 42 in binary
-        // int hex = 0x2A;         // 42 in hexadecimal
-        // int octal = 052;        // 42 in octal
+        // TODO: 다양한 진법을 사용하여 정수 선언하기
+        // 여기에 42를 10진법, 2진법, 16진법, 8진법으로 선언하는 코드를 작성하세요
+        int decimal = 0; // TODO: 42로 변경하세요
+        int binary = 0; // TODO: 0b101010으로 변경하세요 (42의 2진법)
+        int hex = 0; // TODO: 0x2A로 변경하세요 (42의 16진법)
+        int octal = 0; // TODO: 052로 변경하세요 (42의 8진법)
         
-        // TODO: Compare values
-        // System.out.println("Decimal: " + decimal);
-        // System.out.println("Binary: " + binary);
-        // System.out.println("Hex: " + hex);
-        // System.out.println("Octal: " + octal);
-        // System.out.println("All equal? " + (decimal == binary && binary == hex && hex == octal));
+        // TODO: 값들을 비교하고 출력하는 코드를 작성하세요
+        System.out.println("Decimal: " + decimal);
+        System.out.println("Binary: " + binary);
+        System.out.println("Hex: " + hex);
+        System.out.println("Octal: " + octal);
+        // 여기에 모든 값이 같은지 확인하는 코드를 작성하세요
+        boolean allEqual = false; // TODO: (decimal == binary && binary == hex && hex == octal)로 변경하세요
+        System.out.println("All equal? " + allEqual);
         
-        // TODO: Bitwise operations
-        // int a = 0b1100;  // 12
-        // int b = 0b1010;  // 10
-        // int andResult = a & b;  // AND
-        // int orResult = a | b;   // OR
-        // int xorResult = a ^ b;  // XOR
-        // int notResult = ~a;     // NOT
+        // TODO: 비트 연산 수행하기
+        int a = 0b1100;  // 12
+        int b = 0b1010;  // 10
+        // 여기에 AND, OR, XOR, NOT 연산을 수행하는 코드를 작성하세요
+        int andResult = 0; // TODO: a & b로 변경하세요
+        int orResult = 0; // TODO: a | b로 변경하세요
+        int xorResult = 0; // TODO: a ^ b로 변경하세요
+        int notResult = 0; // TODO: ~a로 변경하세요
         
-        // TODO: Bit shifting
-        // int original = 8;  // 0b1000
-        // int leftShift = original << 2;   // Multiply by 4
-        // int rightShift = original >> 2;  // Divide by 4
+        // TODO: 비트 시프트 연산
+        int original = 8;  // 0b1000
+        // 여기에 왼쪽/오른쪽 시프트 연산을 수행하는 코드를 작성하세요
+        int leftShift = 0; // TODO: original << 2로 변경하세요 (4를 곱하기)
+        int rightShift = 0; // TODO: original >> 2로 변경하세요 (4로 나누기)
         
-        // TODO: Display binary representation
-        // System.out.println("\nBitwise Operations:");
-        // System.out.println(a + " & " + b + " = " + andResult);
-        // System.out.println(a + " | " + b + " = " + orResult);
-        // System.out.println(a + " ^ " + b + " = " + xorResult);
-        // System.out.println("~" + a + " = " + notResult);
+        // 비트 연산 결과 출력
+        System.out.println("\nBitwise Operations:");
+        System.out.println(a + " & " + b + " = " + andResult);
+        System.out.println(a + " | " + b + " = " + orResult);
+        System.out.println(a + " ^ " + b + " = " + xorResult);
+        System.out.println("~" + a + " = " + notResult);
         
-        // TODO: Show binary strings
-        // System.out.println("\nBinary representations:");
-        // System.out.println("8 in binary: " + Integer.toBinaryString(original));
-        // System.out.println("8 << 2 = " + leftShift + " (binary: " + Integer.toBinaryString(leftShift) + ")");
-        // System.out.println("8 >> 2 = " + rightShift + " (binary: " + Integer.toBinaryString(rightShift) + ")");
+        // 2진수 표현 출력
+        System.out.println("\nBinary representations:");
+        System.out.println("8 in binary: " + Integer.toBinaryString(original));
+        System.out.println("8 << 2 = " + leftShift + " (binary: " + Integer.toBinaryString(leftShift) + ")");
+        System.out.println("8 >> 2 = " + rightShift + " (binary: " + Integer.toBinaryString(rightShift) + ")");
         
         // Expected output:
         // Decimal: 42

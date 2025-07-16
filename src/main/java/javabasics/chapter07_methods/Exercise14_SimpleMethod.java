@@ -1,30 +1,30 @@
-package javabasics.chapter07_methods;
+package main.java.javabasics.chapter07_methods;
 
 /**
- * <h1>🎯 문제명: 나만의 계산기 만들기 - 메서드!</h1>
+ * <h3>🎯 문제명: 나만의 계산기 만들기 - 메서드!</h3>
  * 
- * <h2>📋 문제 설명</h2>
+ * <h3>📋 문제 설명</h3>
  * <p>
  * 지금까지는 모든 코드를 main 메서드 안에 작성했죠? 🤔<br>
  * 만약 덧셈을 100번 해야 한다면... 같은 코드를 100번 쓸까요? 😱<br><br>
  * 
- * 이제 <strong>메서드(Method)</strong>를 배워볼 거예요! 🎉<br>
- * 메서드는 <strong>자주 사용하는 기능을 따로 만들어두는 것</strong>이에요.<br>
+ * 이제 <b>메서드(Method)</b>를 배워볼 거예요! 🎉<br>
+ * 메서드는 <b>자주 사용하는 기능을 따로 만들어두는 것</b>이에요.<br>
  * 마치 전자레인지의 "1분 돌리기" 버튼처럼요! 🍕
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ * <h3>📌 학습 목표</h3>
+ * 
  *   <ul>
  *     <li>✅ 메서드가 무엇인지 이해하기</li>
  *     <li>✅ 간단한 메서드 만들기</li>
  *     <li>✅ 메서드 호출하고 결과 받기</li>
  *   </ul>
- * </div>
  * 
- * <h2>📝 메서드의 구조</h2>
- * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
- *   <pre style="font-family: monospace;">
+ * 
+ * <h3>📝 메서드의 구조</h3>
+ * 
+ *   <pre>
  *   public static int add(int a, int b) {
  *   ──────────── ─── ─── ──────────────
  *        ①        ②   ③       ④
@@ -38,34 +38,34 @@ package javabasics.chapter07_methods;
  *   ④ 받을 값들 (재료)
  *   ⑤ 계산 결과 반환
  *   </pre>
- * </div>
  * 
- * <h2>🍕 메서드를 요리 레시피로 생각해보세요!</h2>
- * <table border="1" style="border-collapse: collapse; margin: 10px;">
- *   <tr style="background-color: #f0f8ff;">
- *     <th style="padding: 10px;">요리</th>
- *     <th style="padding: 10px;">프로그래밍</th>
+ * 
+ * <h3>🍕 메서드를 요리 레시피로 생각해보세요!</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>요리</th>
+ *     <th>프로그래밍</th>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">레시피 이름: 라면 끓이기</td>
- *     <td style="padding: 10px;">메서드 이름: add</td>
+ *     <td>레시피 이름: 라면 끓이기</td>
+ *     <td>메서드 이름: add</td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">재료: 라면, 물</td>
- *     <td style="padding: 10px;">매개변수: int a, int b</td>
+ *     <td>재료: 라면, 물</td>
+ *     <td>매개변수: int a, int b</td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">요리 과정</td>
- *     <td style="padding: 10px;">메서드 본문 { }</td>
+ *     <td>요리 과정</td>
+ *     <td>메서드 본문 { }</td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;">완성된 라면</td>
- *     <td style="padding: 10px;">return 결과값</td>
+ *     <td>완성된 라면</td>
+ *     <td>return 결과값</td>
  *   </tr>
  * </table>
  * 
- * <h2>⚠️ 초보자가 자주하는 실수</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ * <h3>⚠️ 초보자가 자주하는 실수</h3>
+ * 
  *   <table>
  *     <tr>
  *       <th>❌ 잘못된 예</th>
@@ -88,9 +88,9 @@ package javabasics.chapter07_methods;
  *       <td>결과를 변수에 저장!</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
+ * 
+ * <h3>🎮 도전 과제</h3>
  * <p>두 숫자를 받아서 더한 결과를 돌려주는 add 메서드를 만들어보세요!</p>
  */
 public class Exercise14_SimpleMethod {

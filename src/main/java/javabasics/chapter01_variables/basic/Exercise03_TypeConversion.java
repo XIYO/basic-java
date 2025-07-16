@@ -1,14 +1,14 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
- * <h2>Chapter 1 - 변수와 데이터 타입</h2>
+ * <h3>Chapter 1 - 변수와 데이터 타입</h3>
  * <h3>문제 3: 타입 변환 (Type Conversion)</h3>
  * 
- * <p><strong>목표:</strong> 형변환(Type Casting)을 이해하고 활용할 수 있습니다.</p>
+ * <p><b>목표:</b> 형변환(Type Casting)을 이해하고 활용할 수 있습니다.</p>
  * 
  * <h4>학습 내용:</h4>
- * <div style="border: 2px solid #4CAF50; border-radius: 8px; padding: 15px; background-color: #f5f5f5;">
- *   <h5 style="color: #2E7D32;">📚 타입 변환 (Type Conversion)</h5>
+ * 
+ *   <h5>📚 타입 변환 (Type Conversion)</h5>
  *   
  *   <h6>1. 자동 형변환 (Implicit/Widening Conversion)</h6>
  *   <ul>
@@ -25,8 +25,8 @@ package javabasics.chapter01_variables.basic;
  *   </ul>
  *   
  *   <h6>3. 형변환 규칙</h6>
- *   <table border="1" cellpadding="5" style="margin-top: 10px;">
- *     <tr style="background-color: #e8f5e9;">
+ *   <table border="1" cellpadding="5">
+ *     <tr>
  *       <th>변환 유형</th>
  *       <th>설명</th>
  *       <th>예시</th>
@@ -47,7 +47,7 @@ package javabasics.chapter01_variables.basic;
  *       <td>-</td>
  *     </tr>
  *   </table>
- * </div>
+ * 
  * 
  * <h4>지시사항:</h4>
  * <ol>
@@ -61,9 +61,9 @@ package javabasics.chapter01_variables.basic;
  *   <li><code>int</code>를 <code>double</code>로 변환: 자동 변환되지만 명시적으로 <code>(double)</code> 사용 가능</li>
  * </ul>
  * 
- * @author Task Master AI
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise03_TypeConversion {
     public static void main(String[] args) {
@@ -74,13 +74,15 @@ public class Exercise03_TypeConversion {
         // 실수를 정수로 변환할 때는 소수점 이하가 버려집니다
         // 예시: (int) 3.14 → 3
         // 예시: (int) 3.99 → 3 (반올림 X, 버림 O)
-        int intValue = // ???
+        // TODO: doubleValue를 정수형으로 변환하여 intValue에 저장하세요
+        int intValue = 0; // 여기에 코드를 작성하세요
         
         // TODO: intNumber를 실수형으로 변환
         // 정수를 실수로 변환할 때는 .0이 추가됩니다
         // 예시: (double) 42 → 42.0
         // 참고: int → double은 자동 변환되므로 캐스팅 없이도 가능
-        double doubleNumber = // ???
+        // TODO: intNumber를 실수형으로 변환하여 doubleNumber에 저장하세요
+        double doubleNumber = 0.0; // 여기에 코드를 작성하세요
         
         // 아래 코드는 수정하지 마세요
         System.out.println("3.14를 정수로 변환: " + intValue);

@@ -1,4 +1,4 @@
-package javabasics.chapter07_methods;
+package main.java.javabasics.chapter07_methods;
 
 /**
  * Chapter 7 - 메서드

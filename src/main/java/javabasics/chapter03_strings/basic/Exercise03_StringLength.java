@@ -1,4 +1,4 @@
-package javabasics.chapter03_strings.basic;
+package main.java.javabasics.chapter03_strings.basic;
 
 /**
  * <h3>Chapter 3 - 문자열 (기본)</h3>
@@ -24,10 +24,11 @@ package javabasics.chapter03_strings.basic;
  * </ol>
  * 
  * <h3>💡 메서드 사용법</h3>
- * <pre>
- * String str = "Hello";
- * int len = str.length();  // 5가 반환됩니다
- * </pre>
+ * <ul>
+ *   <li>문자열 변수 뒤에 점(.)을 찍고 length() 메서드를 호출합니다</li>
+ *   <li>메서드는 반드시 괄호()와 함께 사용해야 합니다</li>
+ *   <li>반환되는 값은 정수(int) 타입입니다</li>
+ * </ul>
  * 
  * <h3>⚠️ 주의사항</h3>
  * <ul>
@@ -47,10 +48,12 @@ public class Exercise03_StringLength {
         String emptyText = "";
         
         // TODO: text의 길이를 구하세요
-        int textLength = 0; // length() 메서드를 사용하세요
+        // 힌트: text 변수 뒤에 점을 찍고 length() 메서드를 호출하세요
+        int textLength = ???;
         
         // TODO: emptyText의 길이를 구하세요
-        int emptyLength = 0; // 빈 문자열에도 length() 메서드를 사용할 수 있습니다
+        // 힌트: 빈 문자열에도 똑같이 length() 메서드를 사용합니다
+        int emptyLength = ???;
         
         // 아래 코드는 수정하지 마세요
         System.out.println("'" + text + "'의 길이: " + textLength);

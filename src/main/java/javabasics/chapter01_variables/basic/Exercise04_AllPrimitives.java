@@ -1,16 +1,16 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
- * <h2>Chapter 1 - 변수와 데이터 타입</h2>
+ * <h3>Chapter 1 - 변수와 데이터 타입</h3>
  * <h3>문제 4: 모든 기본 자료형 (All Primitive Data Types)</h3>
  * 
- * <p><strong>목표:</strong> Java의 8가지 기본 자료형(Primitive Types)을 모두 이해하고 활용할 수 있습니다.</p>
+ * <p><b>목표:</b> Java의 8가지 기본 자료형(Primitive Types)을 모두 이해하고 활용할 수 있습니다.</p>
  * 
  * <h4>학습 내용: Java의 8가지 기본 자료형</h4>
  * 
  * <h5>1. 정수형 (Integer Types) - 4가지</h5>
- * <table border="1" cellpadding="5" style="margin-bottom: 15px;">
- *   <tr style="background-color: #e3f2fd;">
+ * <table border="1" cellpadding="5">
+ *   <tr>
  *     <th>타입</th>
  *     <th>크기</th>
  *     <th>범위</th>
@@ -43,8 +43,8 @@ package javabasics.chapter01_variables.basic;
  * </table>
  * 
  * <h5>2. 실수형 (Floating-point Types) - 2가지</h5>
- * <table border="1" cellpadding="5" style="margin-bottom: 15px;">
- *   <tr style="background-color: #e8f5e9;">
+ * <table border="1" cellpadding="5">
+ *   <tr>
  *     <th>타입</th>
  *     <th>크기</th>
  *     <th>정밀도</th>
@@ -88,9 +88,9 @@ package javabasics.chapter01_variables.basic;
  *   <li><code>char</code>는 작은따옴표 사용 (예: <code>'A'</code>)</li>
  * </ul>
  * 
- * @author Task Master AI
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise04_AllPrimitives {
     public static void main(String[] args) {
@@ -100,47 +100,55 @@ public class Exercise04_AllPrimitives {
         // TODO: byte 타입 변수 선언 (-128 ~ 127)
         // 예시: byte myByte = 100;
         // 용도: 메모리 절약이 필요한 대용량 배열, 파일 처리
+        byte myByte = 0; // 여기에 적절한 값을 할당하세요
         
         // TODO: short 타입 변수 선언 (-32,768 ~ 32,767)
         // 예시: short myShort = 30000;
         // 용도: byte보다 큰 범위가 필요하지만 int는 과한 경우
+        short myShort = 0; // 여기에 적절한 값을 할당하세요
         
         // TODO: int 타입 변수 선언 (-2,147,483,648 ~ 2,147,483,647)
         // 예시: int myInt = 2000000;
         // 용도: 가장 일반적인 정수형, 배열 인덱스, 반복문 카운터
+        int myInt = 0; // 여기에 적절한 값을 할당하세요
         
         // TODO: long 타입 변수 선언 (약 -9×10¹⁸ ~ 9×10¹⁸)
         // 예시: long myLong = 9876543210L;  // L 접미사 필수!
         // 용도: 시간(밀리초), 큰 파일 크기, ID 값
+        long myLong = 0L; // 여기에 적절한 값을 할당하세요 (L 접미사 잊지 마세요!)
         
         // 실수형 (Floating-point types) - 2가지
         // TODO: float 타입 변수 선언 (32비트 정밀도, 약 7자리)
         // 예시: float myFloat = 3.14f;  // f 접미사 필수!
         // 용도: 그래픽스, 대량의 실수 데이터 (정밀도보다 메모리 중요)
+        float myFloat = 0.0f; // 여기에 적절한 값을 할당하세요 (f 접미사 잊지 마세요!)
         
         // TODO: double 타입 변수 선언 (64비트 정밀도, 약 15자리)
         // 예시: double myDouble = 3.141592653589793;
         // 용도: 과학 계산, 일반적인 실수 연산 (기본 실수형)
+        double myDouble = 0.0; // 여기에 적절한 값을 할당하세요
         
         // 논리형 (Boolean type) - 1가지
         // TODO: boolean 타입 변수 선언 (true 또는 false)
         // 예시: boolean myBoolean = true;
         // 용도: 조건문, 플래그, 상태 표시
+        boolean myBoolean = false; // 여기에 true 또는 false를 할당하세요
         
         // 문자형 (Character type) - 1가지
         // TODO: char 타입 변수 선언 (단일 문자, 유니코드)
         // 예시: char myChar = 'A';
         // 용도: 단일 문자 처리, 문자 배열로 문자열 표현
+        char myChar = ' '; // 여기에 단일 문자를 할당하세요
         
         // 변수 출력
-        // System.out.println("byte: " + );
-        // System.out.println("short: " + );
-        // System.out.println("int: " + );
-        // System.out.println("long: " + );
-        // System.out.println("float: " + );
-        // System.out.println("double: " + );
-        // System.out.println("boolean: " + );
-        // System.out.println("char: " + );
+        System.out.println("byte: " + myByte);
+        System.out.println("short: " + myShort);
+        System.out.println("int: " + myInt);
+        System.out.println("long: " + myLong);
+        System.out.println("float: " + myFloat);
+        System.out.println("double: " + myDouble);
+        System.out.println("boolean: " + myBoolean);
+        System.out.println("char: " + myChar);
         
         // 예상 출력:
         // byte: 100

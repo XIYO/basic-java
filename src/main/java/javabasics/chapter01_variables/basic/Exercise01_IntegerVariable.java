@@ -1,72 +1,66 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
- * <h1>🎯 문제명: 나의 첫 번째 변수 만들기!</h1>
+ * 🎯 문제명: 나의 첫 번째 변수 만들기!
  * 
- * <h2>📋 문제 설명</h2>
- * <p>
+ * <h3>📋 문제 설명</h3>
  * 안녕하세요! Java 프로그래밍의 첫 걸음을 축하합니다! 🎉<br>
- * 이번 문제에서는 <strong>변수(variable)</strong>라는 것을 만들어볼 거예요.<br><br>
- * 
- * 변수를 <strong>상자</strong>라고 생각해보세요! 📦<br>
+ * 이번 문제에서는 <b>변수(variable)</b>라는 것을 만들어볼 거예요.
+ * <p>
+ * 변수를 <b>상자</b>라고 생각해보세요! 📦<br>
  * 이 상자에는 우리가 원하는 값을 넣어두고, 필요할 때마다 꺼내 쓸 수 있어요.<br>
  * 지금은 나이를 담을 상자를 만들어 볼까요?
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
- *   <ul>
- *     <li>✅ <strong>변수</strong>가 무엇인지 이해하기</li>
- *     <li>✅ <strong>int</strong> 타입으로 정수 저장하기</li>
- *     <li>✅ 변수에 값을 넣는 방법 배우기</li>
- *   </ul>
- * </div>
+ * <h3>📌 학습 목표</h3>
+ * <ul>
+ *   <li>✅ <b>변수</b>가 무엇인지 이해하기</li>
+ *   <li>✅ <b>int</b> 타입으로 정수 저장하기</li>
+ *   <li>✅ 변수에 값을 넣는 방법 배우기</li>
+ * </ul>
  * 
- * <h2>📝 기초 개념</h2>
- * <table border="1" style="border-collapse: collapse; margin: 10px;">
- *   <tr style="background-color: #f0f8ff;">
- *     <th style="padding: 10px;">용어</th>
- *     <th style="padding: 10px;">쉬운 설명</th>
- *     <th style="padding: 10px;">예시</th>
+ * <h3>📝 기초 개념</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>용어</th>
+ *     <th>쉬운 설명</th>
+ *     <th>예시</th>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>int</code></td>
- *     <td style="padding: 10px;">정수(소수점 없는 숫자)를 담는 상자 종류</td>
- *     <td style="padding: 10px;"><code>10, -5, 0, 2024</code></td>
+ *     <td><code>int</code></td>
+ *     <td>정수(소수점 없는 숫자)를 담는 상자 종류</td>
+ *     <td><code>10, -5, 0, 2024</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>변수명</code></td>
- *     <td style="padding: 10px;">상자에 붙이는 이름표</td>
- *     <td style="padding: 10px;"><code>age, score, year</code></td>
+ *     <td><code>변수명</code></td>
+ *     <td>상자에 붙이는 이름표</td>
+ *     <td><code>age, score, year</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>=</code></td>
- *     <td style="padding: 10px;">상자에 값을 넣는다는 뜻</td>
- *     <td style="padding: 10px;"><code>age = 25</code></td>
+ *     <td><code>=</code></td>
+ *     <td>상자에 값을 넣는다는 뜻</td>
+ *     <td><code>age = 25</code></td>
  *   </tr>
  * </table>
  * 
- * <h2>💡 따라하기 쉬운 단계</h2>
- * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
- *   <ol>
- *     <li><strong>상자 종류 정하기:</strong> <code>int</code> 라고 쓰세요</li>
- *     <li><strong>이름표 붙이기:</strong> <code>age</code> 라고 쓰세요</li>
- *     <li><strong>값 넣기:</strong> <code>= 25</code> 라고 쓰세요</li>
- *     <li><strong>마침표 찍기:</strong> <code>;</code> (세미콜론)으로 끝내세요</li>
- *   </ol>
- *   <p style="margin-top: 10px;">
- *   👉 <strong>완성:</strong> <code style="background-color: #fffacd; padding: 2px;">int age = 25;</code>
- *   </p>
- * </div>
+ * <h3>💡 따라하기 쉬운 단계</h3>
+ * <ol>
+ *   <li><b>상자 종류 정하기:</b> <code>int</code> 라고 쓰세요</li>
+ *   <li><b>이름표 붙이기:</b> <code>age</code> 라고 쓰세요</li>
+ *   <li><b>값 넣기:</b> <code>= 25</code> 라고 쓰세요</li>
+ *   <li><b>마침표 찍기:</b> <code>;</code> (세미콜론)으로 끝내세요</li>
+ * </ol>
+ * <p>
+ * 👉 <b>완성:</b> <code>int age = 25;</code>
+ * </p>
  * 
- * <h2>⚠️ 초보자가 자주하는 실수</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
- *   <table>
- *     <tr>
- *       <th>❌ 잘못된 예</th>
- *       <th>✅ 올바른 예</th>
- *       <th>💭 설명</th>
- *     </tr>
+ * <h3>⚠️ 초보자가 자주하는 실수</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>❌ 잘못된 예</th>
+ *     <th>✅ 올바른 예</th>
+ *     <th>💭 설명</th>
+ *   </tr>
  *     <tr>
  *       <td><code>int age = 25</code></td>
  *       <td><code>int age = 25;</code></td>
@@ -83,14 +77,13 @@ package javabasics.chapter01_variables.basic;
  *       <td>변수명은 소문자로 시작해요!</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
- * <p>아래 TODO 부분에 코드를 작성해보세요!</p>
+ * <h3>🎮 도전 과제</h3>
+ * 아래 TODO 부분에 코드를 작성해보세요!
  * 
- * @author Java 학습자
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise01_IntegerVariable {
     public static void main(String[] args) {
@@ -105,7 +98,7 @@ public class Exercise01_IntegerVariable {
          * 5️⃣ ;       (문장 끝!)
          */
         
-        int age = 25;  // 🎉 축하해요! 첫 변수를 만들었어요!
+        // TODO: 여기에 int 타입의 age 변수를 선언하고 25를 저장하세요.
 
         
         /**

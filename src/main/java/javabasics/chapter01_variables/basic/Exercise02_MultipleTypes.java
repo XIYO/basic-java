@@ -1,12 +1,12 @@
-package javabasics.chapter01_variables.basic;
+package main.java.javabasics.chapter01_variables.basic;
 
 /**
- * <h1>🎯 문제명: 다양한 상자 만들기!</h1>
+ * <h3>🎯 문제명: 다양한 상자 만들기!</h3>
  * 
- * <h2>📋 문제 설명</h2>
+ * <h3>📋 문제 설명</h3>
  * <p>
  * 지난 시간에 정수를 담는 상자를 만들어 봤죠? 🎉<br>
- * 이번에는 <strong>여러 종류의 상자</strong>를 만들어볼 거예요!<br><br>
+ * 이번에는 <b>여러 종류의 상자</b>를 만들어볼 거예요!<br><br>
  * 
  * 마치 우리가 물건을 정리할 때 📦<br>
  * - 책은 책장에 📚
@@ -15,61 +15,61 @@ package javabasics.chapter01_variables.basic;
  * 넣는 것처럼, Java에서도 데이터 종류에 맞는 상자를 사용해요!
  * </p>
  * 
- * <h2>📌 학습 목표</h2>
- * <div style="background-color: #e6f3ff; padding: 10px; border-radius: 5px;">
+ * <h3>📌 학습 목표</h3>
+ * 
  *   <ul>
  *     <li>✅ 4가지 기본 데이터 타입 익히기</li>
  *     <li>✅ 각 타입에 맞는 값 넣기</li>
  *     <li>✅ 문자와 문자열의 차이 이해하기</li>
  *   </ul>
- * </div>
  * 
- * <h2>📝 상자 종류와 쓰임새</h2>
- * <table border="1" style="border-collapse: collapse; margin: 10px;">
- *   <tr style="background-color: #f0f8ff;">
- *     <th style="padding: 10px;">상자 타입</th>
- *     <th style="padding: 10px;">무엇을 담나요?</th>
- *     <th style="padding: 10px;">실생활 예시</th>
- *     <th style="padding: 10px;">코드 예시</th>
+ * 
+ * <h3>📝 상자 종류와 쓰임새</h3>
+ * <table border="1">
+ *   <tr>
+ *     <th>상자 타입</th>
+ *     <th>무엇을 담나요?</th>
+ *     <th>실생활 예시</th>
+ *     <th>코드 예시</th>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>int</code> 📦</td>
- *     <td style="padding: 10px;">정수 (소수점 ❌)</td>
- *     <td style="padding: 10px;">나이, 점수, 개수</td>
- *     <td style="padding: 10px;"><code>int age = 20;</code></td>
+ *     <td><code>int</code> 📦</td>
+ *     <td>정수 (소수점 ❌)</td>
+ *     <td>나이, 점수, 개수</td>
+ *     <td><code>int age = 20;</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>double</code> 📐</td>
- *     <td style="padding: 10px;">실수 (소수점 ⭕)</td>
- *     <td style="padding: 10px;">가격, 키, 몸무게</td>
- *     <td style="padding: 10px;"><code>double height = 175.5;</code></td>
+ *     <td><code>double</code> 📐</td>
+ *     <td>실수 (소수점 ⭕)</td>
+ *     <td>가격, 키, 몸무게</td>
+ *     <td><code>double height = 175.5;</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>char</code> 🔤</td>
- *     <td style="padding: 10px;">문자 1개</td>
- *     <td style="padding: 10px;">학점, 등급, 성별</td>
- *     <td style="padding: 10px;"><code>char grade = 'A';</code></td>
+ *     <td><code>char</code> 🔤</td>
+ *     <td>문자 1개</td>
+ *     <td>학점, 등급, 성별</td>
+ *     <td><code>char grade = 'A';</code></td>
  *   </tr>
  *   <tr>
- *     <td style="padding: 10px;"><code>boolean</code> 🔘</td>
- *     <td style="padding: 10px;">참/거짓</td>
- *     <td style="padding: 10px;">합격여부, 전원상태</td>
- *     <td style="padding: 10px;"><code>boolean isOn = true;</code></td>
+ *     <td><code>boolean</code> 🔘</td>
+ *     <td>참/거짓</td>
+ *     <td>합격여부, 전원상태</td>
+ *     <td><code>boolean isOn = true;</code></td>
  *   </tr>
  * </table>
  * 
- * <h2>💡 이번 문제에서 만들 상자들</h2>
- * <div style="background-color: #f0f8ff; padding: 15px; border-radius: 5px;">
- *   <ol>
- *     <li>📊 <strong>score</strong> : 시험 점수 100점을 담는 정수 상자</li>
- *     <li>💰 <strong>price</strong> : 상품 가격 19.99달러를 담는 실수 상자</li>
- *     <li>🎯 <strong>grade</strong> : 학점 'A'를 담는 문자 상자</li>
- *     <li>✅ <strong>isPassed</strong> : 합격했다(true)를 담는 논리 상자</li>
- *   </ol>
- * </div>
+ * <h3>💡 이번 문제에서 만들 상자들</h3>
  * 
- * <h2>⚠️ 초보자가 자주하는 실수</h2>
- * <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px;">
+ *   <ol>
+ *     <li>📊 <b>score</b> : 시험 점수 100점을 담는 정수 상자</li>
+ *     <li>💰 <b>price</b> : 상품 가격 19.99달러를 담는 실수 상자</li>
+ *     <li>🎯 <b>grade</b> : 학점 'A'를 담는 문자 상자</li>
+ *     <li>✅ <b>isPassed</b> : 합격했다(true)를 담는 논리 상자</li>
+ *   </ol>
+ * 
+ * 
+ * <h3>⚠️ 초보자가 자주하는 실수</h3>
+ * 
  *   <table>
  *     <tr>
  *       <th>❌ 잘못된 예</th>
@@ -92,14 +92,14 @@ package javabasics.chapter01_variables.basic;
  *       <td>소수점은 double로!</td>
  *     </tr>
  *   </table>
- * </div>
  * 
- * <h2>🎮 도전 과제</h2>
+ * 
+ * <h3>🎮 도전 과제</h3>
  * <p>아래 TODO 부분에 4개의 변수를 만들어보세요!</p>
  * 
- * @author Java 학습자
+ * @author XIYO
  * @version 1.0
- * @since 2024-01-01
+ * @since 2025-07-15
  */
 public class Exercise02_MultipleTypes {
     public static void main(String[] args) {
@@ -110,16 +110,16 @@ public class Exercise02_MultipleTypes {
          */
         
         // 1️⃣ 시험 점수 100점을 담을 정수 상자
-        int score = 100;        // 🎯 정수는 int!
+        // TODO: int 타입의 score 변수를 선언하고 100을 저장하세요.
         
         // 2️⃣ 상품 가격 19.99달러를 담을 실수 상자
-        double price = 19.99;   // 💰 소수점이 있으면 double!
+        // TODO: double 타입의 price 변수를 선언하고 19.99를 저장하세요.
         
         // 3️⃣ 학점 'A'를 담을 문자 상자
-        char grade = 'A';       // 🔤 문자 하나는 작은따옴표!
+        // TODO: char 타입의 grade 변수를 선언하고 'A'를 저장하세요. (작은따옴표 사용!)
         
         // 4️⃣ 합격 여부 true를 담을 논리 상자
-        boolean isPassed = true; // ✅ 참/거짓은 boolean!
+        // TODO: boolean 타입의 isPassed 변수를 선언하고 true를 저장하세요.
         
         
         /**

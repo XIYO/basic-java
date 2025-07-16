@@ -1,4 +1,4 @@
-package javabasics.chapter04_conditions.advanced;
+package main.java.javabasics.chapter04_conditions.advanced;
 
 /**
  * Chapter 4 - 조건문 (응용)

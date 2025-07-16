@@ -1,4 +1,4 @@
-package javabasics.solutions;
+package main.java.javabasics.solutions;
 
 /**
  * 문제 1 해답: 정수 변수 선언
