@@ -34,6 +34,10 @@ public class Exercise05_ValidationChain {
         int validCount = 0;
         
         // TODO: 비밀번호 강도를 검증하는 로직을 작성하세요
+        // 힌트1: 각 조건(길이, 대문자, 소문자, 숫자, 특수문자)을 확인하여 validCount를 증가시키세요
+        // 힌트2: 길이가 8 이상인지 확인하세요
+        // 힌트3: 각 boolean 변수가 true일 때마다 validCount를 1씩 증가시키세요
+        // 힌트4: 최종적으로 validCount에 따라 strength를 설정하세요 (5개:"강함", 4개:"보통", 3개 이하:"약함")
         
         
         

@@ -48,20 +48,13 @@ package main.java.javabasics.chapter04_conditions.basic;
  * <h3>💡 따라하기 쉬운 단계</h3>
  * 
  *   <ol>
- *     <li><b>조건 생각하기:</b> "나이가 18 이상인가?"</li>
- *     <li><b>if문 시작하기:</b> <code>if (</code> 라고 쓰세요</li>
- *     <li><b>조건식 쓰기:</b> <code>age >= 18</code> 라고 쓰세요</li>
- *     <li><b>괄호 닫기:</b> <code>) {</code> 라고 쓰세요</li>
- *     <li><b>실행할 코드:</b> <code>canVote = true;</code> 라고 쓰세요</li>
- *     <li><b>중괄호 닫기:</b> <code>}</code> 라고 쓰세요</li>
+ *     <li><b>조건 생각하기:</b> "나이가 18 이상인가?"를 확인해야 합니다</li>
+ *     <li><b>if문 시작하기:</b> if 키워드로 시작합니다</li>
+ *     <li><b>조건식 쓰기:</b> 괄호 안에 나이가 18 이상인지 비교하는 조건식을 넣습니다</li>
+ *     <li><b>중괄호 열기:</b> 조건이 참일 때 실행할 코드를 중괄호로 감쌉니다</li>
+ *     <li><b>실행할 코드:</b> canVote 변수를 true로 변경합니다</li>
+ *     <li><b>중괄호 닫기:</b> 실행할 코드 작성이 끝나면 중괄호를 닫습니다</li>
  *   </ol>
- *   <p>
- *   👉 <b>완성 코드:</b>
- *   <pre>
- *   if (age >= 18) {
- *       canVote = true;
- *   }</pre>
- *   </p>
  * 
  * 
  * <h3>📊 비교 연산자 정리</h3>
@@ -137,10 +130,11 @@ public class Exercise01_IfStatement {
          * - age가 18 이상인지 확인하는 if문
          * - 조건이 참이면 canVote를 true로 변경
          * 
-         * 💡 힌트: if (age >= 18) { ... }
+         * 💡 힌트: if 키워드 뒤에 괄호를 열고, age가 18 이상인지 비교하는 조건식을 작성하세요
          */
         
         // TODO: 여기에 if문을 작성하세요
+        // 힌트: age가 18 이상이면 canVote를 true로 설정하는 if문을 작성하세요
         
         
         

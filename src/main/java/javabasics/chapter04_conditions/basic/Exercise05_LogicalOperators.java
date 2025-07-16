@@ -33,18 +33,13 @@ package main.java.javabasics.chapter04_conditions.basic;
  *   <li>연산자 우선순위: 관계 연산자(>=, <=) → 논리 연산자(&&, ||)</li>
  * </ul>
  * 
- * <h3>📌 예제 코드 패턴</h3>
- * <pre>
- * // AND 연산자 사용 예
- * if (조건1 && 조건2) {
- *     // 두 조건 모두 참일 때 실행
- * }
- * 
- * // OR 연산자 사용 예
- * if (조건1 || 조건2) {
- *     // 둘 중 하나라도 참이면 실행
- * }
- * </pre>
+ * <h3>📌 논리 연산자 사용법</h3>
+ * <ul>
+ *   <li><b>AND 연산자 (&&)</b>: 두 조건을 모두 만족해야 할 때 사용</li>
+ *   <li><b>OR 연산자 (||)</b>: 두 조건 중 하나만 만족해도 될 때 사용</li>
+ *   <li><b>조건 결합</b>: if문의 괄호 안에서 여러 조건을 논리 연산자로 연결</li>
+ *   <li><b>연산 순서</b>: 비교 연산이 먼저 수행되고, 그 결과를 논리 연산자가 결합</li>
+ * </ul>
  * 
  * <h3>⚡ 논리 연산자 진리표</h3>
  * <table border="1">
@@ -80,10 +75,12 @@ public class Exercise05_LogicalOperators {
         
         // TODO: 논리 연산자를 사용하여 조건을 작성하세요
         // 1. isNiceWeather 설정 (온도가 20 이상 30 이하)
+        // 힌트: temperature >= 20 그리고(&&) temperature <= 30인지 확인하는 if문을 작성하세요
         
         
         
         // 2. needUmbrella 설정 (비가 오거나 눈이 올 때)
+        // 힌트: isRaining이 true 또는(||) isSnowing이 true인지 확인하는 if문을 작성하세요
         
         
         

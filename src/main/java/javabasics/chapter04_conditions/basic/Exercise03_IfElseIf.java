@@ -57,27 +57,23 @@ package main.java.javabasics.chapter04_conditions.basic;
  * 
  * <h3>📚 if-else if-else 구조</h3>
  * 
- *   <pre>
- *   if (조건 1) {
- *       // 조건 1이 참일 때 실행
- *   } else if (조건 2) {
- *       // 조건 1이 거짓이고 조건 2가 참일 때 실행
- *   } else if (조건 3) {
- *       // 조건 1, 2가 거짓이고 조건 3이 참일 때 실행
- *   } else {
- *       // 모든 조건이 거짓일 때 실행
- *   }
- *   </pre>
+ *   <ul>
+ *     <li><b>첫 번째 if:</b> 첫 번째 조건을 검사합니다</li>
+ *     <li><b>else if:</b> 위의 조건이 거짓일 때만 다음 조건을 검사합니다</li>
+ *     <li><b>여러 else if:</b> 필요한 만큼 else if를 추가할 수 있습니다</li>
+ *     <li><b>마지막 else:</b> 모든 조건이 거짓일 때 실행됩니다</li>
+ *     <li><b>중요:</b> 조건 중 하나가 참이면 나머지는 검사하지 않습니다</li>
+ *   </ul>
  * 
  * 
  * <h3>💡 따라하기 쉬운 단계</h3>
  * 
  *   <ol>
- *     <li><b>90점 이상 검사:</b> <code>if (score >= 90)</code></li>
- *     <li><b>80점 이상 검사:</b> <code>else if (score >= 80)</code></li>
- *     <li><b>70점 이상 검사:</b> <code>else if (score >= 70)</code></li>
- *     <li><b>60점 이상 검사:</b> <code>else if (score >= 60)</code></li>
- *     <li><b>그 외의 경우:</b> <code>else</code></li>
+ *     <li><b>90점 이상 검사:</b> if 문으로 score가 90 이상인지 확인</li>
+ *     <li><b>80점 이상 검사:</b> else if 문으로 score가 80 이상인지 확인</li>
+ *     <li><b>70점 이상 검사:</b> else if 문으로 score가 70 이상인지 확인</li>
+ *     <li><b>60점 이상 검사:</b> else if 문으로 score가 60 이상인지 확인</li>
+ *     <li><b>그 외의 경우:</b> else 문으로 나머지 경우 처리</li>
  *   </ol>
  *   <p>
  *   👉 <b>중요:</b> 반드시 <span>높은 점수부터</span> 검사해야 해요!
@@ -88,21 +84,13 @@ package main.java.javabasics.chapter04_conditions.basic;
  * 
  *   <table>
  *     <tr>
- *       <th>❌ 잘못된 예</th>
- *       <th>✅ 올바른 예</th>
+ *       <th>❌ 잘못된 순서</th>
+ *       <th>✅ 올바른 순서</th>
  *       <th>💭 설명</th>
  *     </tr>
  *     <tr>
- *       <td><pre>if (score >= 60) {
-  grade = "D";
-} else if (score >= 90) {
-  grade = "A";
-}</pre></td>
- *       <td><pre>if (score >= 90) {
-  grade = "A";
-} else if (score >= 60) {
-  grade = "D";
-}</pre></td>
+ *       <td>60점 이상을 먼저 검사<br>그 다음 90점 이상 검사</td>
+ *       <td>90점 이상을 먼저 검사<br>그 다음 60점 이상 검사</td>
  *       <td>낮은 점수를 먼저 검사하면<br>90점도 D가 되어버려요!</td>
  *     </tr>
  *   </table>
@@ -130,10 +118,11 @@ public class Exercise03_IfElseIf {
          * 4️⃣ 60점 이상 → grade = "D"
          * 5️⃣ 그 외 → grade = "F"
          * 
-         * 💡 힌트: 높은 점수부터 검사하세요!
+         * 💡 힌트: if문으로 시작해서 else if를 여러 개 사용하고, 마지막에 else로 끝내세요
          */
         
         // TODO: 여기에 if-else if-else 문을 작성하세요
+        // 힌트: score가 90 이상인지부터 확인하는 if문으로 시작하세요
         
         
         

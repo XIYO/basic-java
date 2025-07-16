@@ -73,13 +73,11 @@ package main.java.javabasics.chapter04_conditions.basic;
  * 
  * <h3>📚 if-else문 구조</h3>
  * 
- *   <pre>
- *   if (조건식) {
- *       // 조건이 참(true)일 때 실행할 코드
- *   } else {
- *       // 조건이 거짓(false)일 때 실행할 코드
- *   }
- *   </pre>
+ *   <ul>
+ *     <li><b>if 부분:</b> 조건이 참(true)일 때 실행할 코드를 중괄호 안에 작성합니다</li>
+ *     <li><b>else 부분:</b> 조건이 거짓(false)일 때 실행할 코드를 중괄호 안에 작성합니다</li>
+ *     <li><b>구조:</b> if (조건식) { 참일 때 코드 } else { 거짓일 때 코드 }</li>
+ *   </ul>
  *   <p>
  *   👉 <b>예시:</b> "비가 오면 우산을 쓰고, 안 오면 선글라스를 쓴다"
  *   </p>
@@ -125,11 +123,12 @@ public class Exercise02_EvenOdd {
          * - 짝수면 "짝수입니다" 출력
          * - 홀수면 "홀수입니다" 출력
          * 
-         * 💡 힌트: number % 2 == 0
+         * 💡 힌트: 나머지 연산자(%)를 사용하여 number를 2로 나눈 나머지가 0인지 확인하세요
          */
         
         // TODO: if 괄호 안에 짝수 판별 조건을 작성하세요
-        if (/* 여기에 조건을 작성하세요 */) {
+        // 힌트: number를 2로 나눈 나머지가 0과 같은지 비교하는 조건식을 작성하세요
+        if (???) {
             System.out.println(number + "은(는) 짝수입니다");
         } else {
             System.out.println(number + "은(는) 홀수입니다");

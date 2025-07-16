@@ -25,6 +25,11 @@ public class Exercise04_CalculatorSwitch {
         boolean isValid = true;
         
         // TODO: switch문을 사용하여 계산기를 구현하세요
+        // 힌트1: switch(operator)로 시작하세요
+        // 힌트2: 각 case에서 result에 계산 결과를 저장하세요
+        // 힌트3: 나눗셈의 경우 num2가 0인지 먼저 확인하세요
+        // 힌트4: 0으로 나누는 경우 에러 메시지를 출력하고 isValid를 false로 설정하세요
+        // 힌트5: default로 잘못된 연산자를 처리하세요
         
         
         

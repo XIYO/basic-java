@@ -25,6 +25,9 @@ public class Exercise01_ComplexConditions {
         String memberGrade = "";
         
         // TODO: 회원 등급을 결정하는 조건문을 작성하세요
+        // 힌트1: if-else if-else 구조를 사용하세요
+        // 힌트2: PLATINUM 조건부터 시작해서 점점 느슨한 조건으로 내려가세요
+        // 힌트3: AND(&&)와 OR(||) 연산자를 적절히 사용하세요
         
         
         

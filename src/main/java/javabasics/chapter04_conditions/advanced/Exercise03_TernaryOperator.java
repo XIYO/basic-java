@@ -23,13 +23,14 @@ public class Exercise03_TernaryOperator {
         int score = 75;
         
         // TODO: 삼항 연산자를 사용하여 값을 설정하세요
-        boolean isAdult = false;  // age가 18 이상인지 확인
+        // 힌트: 조건 ? 참일때값 : 거짓일때값 형식을 사용하세요
+        boolean isAdult = ???;  // age가 18 이상인지 확인
         
         
-        double discount = 0;  // 회원이면 10% 할인
+        double discount = ???;  // 회원이면 0.1(10% 할인), 아니면 0
         
         
-        String message = "";  // 60점 이상이면 합격
+        String message = ???;  // score가 60점 이상이면 "합격", 아니면 "불합격"
         
         
         // 아래 코드는 수정하지 마세요

@@ -23,6 +23,11 @@ public class Exercise02_SwitchStatement {
         String schedule = "";
         
         // TODO: switch문을 사용하여 요일별 일정을 설정하세요
+        // 힌트1: switch(dayOfWeek)로 시작하세요
+        // 힌트2: 각 case마다 schedule 변수에 해당 일정을 할당하세요
+        // 힌트3: 각 case 끝에는 break를 넣어주세요
+        // 힌트4: case 6과 7은 함께 처리할 수 있습니다
+        // 힌트5: default로 잘못된 입력을 처리하세요
         
         
         

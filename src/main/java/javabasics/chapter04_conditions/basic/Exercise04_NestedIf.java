@@ -34,15 +34,13 @@ package main.java.javabasics.chapter04_conditions.basic;
  *   <li>외부 if문이 false면 내부 if문은 실행되지 않습니다</li>
  * </ul>
  * 
- * <h3>📌 예제 코드 패턴</h3>
- * <pre>
- * if (첫 번째 조건) {
- *     // 첫 번째 조건이 참일 때
- *     if (두 번째 조건) {
- *         // 두 조건 모두 참일 때
- *     }
- * }
- * </pre>
+ * <h3>📌 중첩 if문 구조</h3>
+ * <ul>
+ *   <li>바깥쪽 if문: 첫 번째 조건을 검사합니다</li>
+ *   <li>안쪽 if문: 첫 번째 조건이 참일 때만 두 번째 조건을 검사합니다</li>
+ *   <li>중첩 구조: if문 안에 또 다른 if문을 작성합니다</li>
+ *   <li>들여쓰기: 각 단계마다 들여쓰기를 해서 구조를 명확히 합니다</li>
+ * </ul>
  * 
  * @author XIYO
  * @version 1.0
@@ -55,6 +53,9 @@ public class Exercise04_NestedIf {
         boolean canDrive = false;
         
         // TODO: 중첩 if문을 사용하여 canDrive를 설정하세요
+        // 힌트1: 먼저 age가 18 이상인지 확인하는 if문을 작성하세요
+        // 힌트2: 첫 번째 조건이 참이면, 그 안에서 hasLicense를 확인하는 if문을 작성하세요
+        // 힌트3: 두 조건을 모두 만족할 때 canDrive를 true로 변경하세요
         
         
         
