@@ -103,10 +103,11 @@ public class Exercise14_SimpleMethod {
      * }
      */
     
-    public static int add(int a, int b) {
-        // 🎯 두 숫자를 더해서 결과를 돌려줍니다!
-        return a + b;  // 💡 a와 b를 더한 값을 반환
-    }
+    // TODO: 여기에 add 메서드를 작성하세요
+    // 힌트: public static int add(int a, int b)로 시작하세요
+    // 힌트: 메서드 안에서 a + b의 결과를 return하세요
+    
+    
     
     
     public static void main(String[] args) {

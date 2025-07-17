@@ -57,13 +57,9 @@ package main.java.javabasics.chapter05_loops.basic;
  *     <li><b>중괄호 닫기:</b> <code>}</code></li>
  *   </ol>
  *   <p>
- *   👉 <b>전체 코드:</b>
- *   <pre>
- * int i = 10;
- * while(i >= 1) {
- *     System.out.println(i);
- *     i--;  // 이게 없으면 무한 루프!
- * }</pre>
+ *   👉 <b>전체 구조:</b><br>
+ *   시작값 설정 → while 조건 확인 → 출력 → 값 감소 → 다시 조건 확인<br>
+ *   이 과정을 조건이 거짓이 될 때까지 반복합니다!
  *   </p>
  * 
  * 
@@ -106,11 +102,11 @@ public class Exercise03_WhileLoop {
          * 🧑‍💻 여기에 코드를 작성하세요!
          * 
          * 📝 작성 순서:
-         * 1️⃣ int i = 10;     // 시작 숫자
-         * 2️⃣ while(i >= 1) { // 1 이상일 동안
-         * 3️⃣     System.out.println(i);
-         * 4️⃣     i--;         // 꼭 필요!
-         * 5️⃣ }
+         * 1️⃣ 정수 변수 i를 선언하고 10으로 초기화
+         * 2️⃣ while문 시작 - i가 1 이상일 동안 반복
+         * 3️⃣ i의 값을 출력
+         * 4️⃣ i를 1씩 감소 (이게 없으면 무한 루프!)
+         * 5️⃣ 중괄호로 while문 닫기
          */
         
         // TODO: 여기에 while문을 작성하세요
